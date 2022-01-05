@@ -1,0 +1,12 @@
+.projects {
+    text-align: center;
+}
+.projects > h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+.projects > h4 {
+    font-size: 2em;
+    font-weight: 100;
+}
+  
