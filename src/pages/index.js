@@ -1,5 +1,15 @@
 import React from "react"
 
 export default function Home() {
-  return <div>Hello world!</div>
+
+  return (
+    <section>
+      <div>
+        
+        <h2>IT Engineer and Passionate Pragmatice Developer</h2>
+      
+      </div>
+    </section>
+  )
+
 }
