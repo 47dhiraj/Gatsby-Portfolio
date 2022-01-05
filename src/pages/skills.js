@@ -1,9 +1,13 @@
 import React from 'react'
+import Layout from '../components/Layout';
+
 
 export default function Skills() {
     return (
-        <div>
-            My Skills
-        </div>
+        <Layout>
+            <div>
+                My Skills
+            </div>
+        </Layout>
     )
 }
