@@ -1,13 +1,16 @@
 import React from "react"
+import Navbar from "../components/Navbar"
+
 
 export default function Home() {
 
   return (
     <section>
-      <div>
-        
-        <h2>IT Engineer and Passionate Pragmatice Developer</h2>
       
+      <Navbar />
+
+      <div>
+        <h2>IT Engineer and Passionate Pragmatice Developer</h2>
       </div>
     </section>
   )

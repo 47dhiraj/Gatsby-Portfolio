@@ -1,11 +1,9 @@
 import React from 'react'
 
-
-export default function Test() 
-{
+export default function Skills() {
     return (
         <div>
-            Testing file
+            My Skills
         </div>
     )
 }
