@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
+  background: radial-gradient(at top left, rgb(70, 10, 116) 0%, rgb(146, 34, 127) 100%);
   background-repeat: no-repeat;
 }
 
@@ -36,8 +36,8 @@ p {
   align-items: center;          
   max-width: 1200px;
   margin: 25px auto;               
-  border-bottom: 4px solid #f2f2f2;
-  border-color: #f5497c;
+  border-bottom: 5px solid;
+  border-color: #ff007f;
 }
 
 .navbar__brand {
@@ -78,10 +78,16 @@ nav .links a:hover {
   border-color: #f1356d;
 }
 
-footer p{
-  text-align: center;
-  color: #bbb;
-  margin: 40px auto;
+footer {
+  display: flex;
+  align-items: center;  
+  text-align: center;        
+  max-width: 1200px;
+  margin-top: 160px;  
+  font-size: 20px;
+  background: radial-gradient(at top left, rgb(80, 23, 124) 0%, rgb(111, 24, 114) 100%);
+  background-repeat: no-repeat;
 }
+
 
 

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Link } from 'gatsby'
 import Layout from "../components/Layout"
 import * as styles from '../styles/home.module.css'
@@ -9,6 +9,8 @@ import { Facebook } from "@material-ui/icons"
 import Grid  from "@material-ui/core/Grid"
 import { IconButton } from "@material-ui/core"
 
+import Zoom from "@material-ui/core/Zoom"
+
 
 const socialItems = [
   {icon: GitHub, url: "https://github.com/47dhiraj"},
@@ -18,18 +20,22 @@ const socialItems = [
 
 export default function Home() {
 
+  const [show, setShow] = useState(false)
+  useEffect(() => setShow(true), [])
+
   return (
     <Layout>
 
       <section className={styles.header}>
         
-        <div>
-          <h2>Code, The Logic !</h2>
-          <h3>IT Engineer and Passionate Pragmatice Developer</h3>
+        <Zoom in={show} style={{ transitionDelay: show ? '200ms' : '0ms' }}>
+          <div>
+            <h2>Code, The Logic !</h2>
+            <h3>IT Engineer and Passionate Pragmatice Developer</h3>
 
-          <Link className={styles.btn} to="/resume"> View Resume </Link>
-
-        </div>
+            <Link className={styles.btn} to="/resume"> View Resume </Link>
+          </div>
+        </Zoom>
 
 
         <div style={{ display: 'flex', flexDirection: 'row'}}>
@@ -37,7 +43,7 @@ export default function Home() {
           <Grid Container style={{ marginTop: 'auto' }}>
             {
               socialItems.map((item) => (
-                <Grid item >
+                <Grid item  key={item.icon}>
                   <Link href={item.url} target='_blank'>
                     <IconButton>
                       <item.icon />

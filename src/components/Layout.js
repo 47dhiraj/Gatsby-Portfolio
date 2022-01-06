@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
 import '../styles/global.css'
-
+import { Email } from "@material-ui/icons"
+import { Phone } from "@material-ui/icons"
 
 export default function Layout({ children }) 
 {
@@ -14,9 +15,16 @@ export default function Layout({ children })
         { children }
       </div>
 
-      <footer style={{ marginTop: '410px'}}>
-        <p>Copyright &copy; 2022 Dhiraj's Portfolio</p>
+
+      <footer>
+        <p style={{color: '#bbb'}}> Copyright &copy; 2022 Dhiraj Kafle 
+
+        <span style={{padding: '10px', color: '#bbb'}}> <Phone /> +977 9847122181 </span>
+        <span style={{padding: '10px', color: '#bbb'}}> < Email /> dhirajkafle553@gmail.com </span>
+        </p>
       </footer>
+
+
 
     </div>
   )

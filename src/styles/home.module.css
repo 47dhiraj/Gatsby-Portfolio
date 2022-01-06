@@ -16,13 +16,15 @@
 
 .btn {
     display: inline-block;
-    background: #D42990;
+    background: #e2157b;
     margin-top: 20px;
     padding: 6px 22px;
     margin-bottom: 40px;
-    /* padding: 10px 26px; */
     border-radius: 10px;
-    /* border-radius: 9px; */
     font-size: x-large;
     /* font-weight: 500; */
+}
+
+.btn:hover {
+    background-color: #4b22e0;
 }
