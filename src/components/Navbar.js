@@ -5,7 +5,12 @@ export default function Navbar() {
 
     return (
         <nav className='header'>
-            <h1>Dhiraj Kafle</h1>
+
+            <a class="navbar__brand" href="/">
+                <img class="navbar__logo" src="/avatar.png" alt="FullStack Web Developer, Nepal" />
+                <strong class="navbar__title">Dhiraj Kafle</strong>
+            </a>
+
 
             <div className="links">
 
