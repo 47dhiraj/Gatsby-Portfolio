@@ -14,7 +14,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,             // Needed for dynamic images
 
-    {
+    {                                       // dynamic images haru graphQL query lagayera matra access garna milcha, so tei vayera images ko lagi source dinai parcha
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -23,7 +23,7 @@ module.exports = {
     },
     
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-filesystem`,   // markdown file haru ko lagi pani source dinnai parcha
       options: {
         name: `projects`,
         path: `${__dirname}/src/projects/`,
@@ -33,7 +33,7 @@ module.exports = {
   ],
 
   
-  siteMetadata: {
+  siteMetadata: {                           // site ko metadata chai vani yesari lekhna sakincha
 
     title: `Dhiraj Kafle`,
     description: `This static site is my Portfolio.`,

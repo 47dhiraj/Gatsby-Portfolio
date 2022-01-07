@@ -3,6 +3,8 @@ title: Earning Expense Tracker
 stack: HTML, CSS, Bootstrap, Vannila Js, Django Rest Framework
 slug: earning-expense-tracker
 date: 2021-03-01T00:00:00+00
+thumb: ../images/thumbs/drums.png
+featuredImg: ../images/featured/drums-banner.png
 ---
 
 ### Earning and Expense Tracking System
