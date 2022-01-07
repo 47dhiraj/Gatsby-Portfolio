@@ -6,10 +6,17 @@ export default function Navbar() {
     return (
         <nav className='header'>
 
-            <a class="navbar__brand" href="/">
+
+            <div class="navbar__brand">
+
                 <img class="navbar__logo" src="/avatar.png" alt="FullStack Web Developer, Nepal" />
-                <strong class="navbar__title">Dhiraj Kafle</strong>
-            </a>
+
+                <Link to="/">
+                    <strong style={{fontSize: '1.6em', maxWidth: '100%' }}>Dhiraj Kafle</strong>
+                </Link>        
+
+            </div>
+            
 
 
             <div className="links">

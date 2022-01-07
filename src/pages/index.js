@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from "../components/Layout"
 import * as styles from '../styles/home.module.css'
 
@@ -18,7 +18,9 @@ const socialItems = [
   {icon: Facebook, url: "https://www.facebook.com/dhirajkafle553/"},
 ]
 
-export default function Home() {
+export default function Home({ data }) {
+
+  const { title, description } = data.site.siteMetadata
 
   const [show, setShow] = useState(false)
   useEffect(() => setShow(true), [])
@@ -58,6 +60,7 @@ export default function Home() {
 
         </div>
         
+        <p>{ title } - { description }</p>
 
       </section>
 
@@ -65,3 +68,18 @@ export default function Home() {
   )
 
 }
+
+
+
+export const query = graphql`
+
+  query SiteInfo {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+
+`
