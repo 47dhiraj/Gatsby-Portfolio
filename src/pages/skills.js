@@ -6,7 +6,7 @@ export default function Skills() {
     return (
         <Layout>
             <div>
-                My Skills
+                <h4 style={{fontSize: '2em', fontWeight: '100', textAlign: 'center' }}>Skills I have Developed</h4>
             </div>
         </Layout>
     )

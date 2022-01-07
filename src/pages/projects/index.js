@@ -1,20 +1,54 @@
 import React from 'react'
 import Layout from '../../components/Layout';
 import * as styles from '../../styles/projects.module.css'
+import { Link,  graphql } from 'gatsby';
 
-const Projects = () => {
+const Projects = ({ data }) => {
 
-    return (
-      <Layout>
+  const projects = data.allMarkdownRemark.nodes
+
+  return (
+    <Layout>
+      <div className={styles.portfolio_projects}>
+
+        <h4>Projects & Sites I have created</h4>
+
         <div className={styles.projects}>
-
-          <h2>Portfolio</h2>
-          <h4>Projects & sites i've created</h4>
-          
+          {
+            projects.map(project => (
+              <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
+                <div>
+                  <h3>{ project.frontmatter.title }</h3>
+                  <p>{ project.frontmatter.stack }</p>
+                </div>
+              </Link>
+            ))
+          }
         </div>
-      </Layout>
-    );
+        
+      </div>
+    </Layout>
+  );
 
-  }
+}
    
 export default Projects
+
+
+// export page query
+export const query = graphql`
+
+  query ProjectsPage {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          title
+          slug
+          stack
+        }
+        id
+      }
+    }
+  }
+
+`

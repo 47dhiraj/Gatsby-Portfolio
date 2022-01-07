@@ -1,12 +1,31 @@
-.projects {
+.portfolio_projects {
     text-align: center;
 }
-.projects > h2 {
+
+.portfolio_projects > h2 {
     font-size: 2em;
     margin-top: 20px;
 }
-.projects > h4 {
+
+.portfolio_projects > h4 {
     font-size: 2em;
     font-weight: 100;
 }
-  
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;             /* 3 columns in a row vaneko */
+    grid-gap: 80px;
+    margin: 80px 20px;
+}
+
+.projects h3 {
+    text-align: center;
+    margin: 20px auto 0px;
+    font-weight: 500;
+}
+
+.projects p {
+    color: #ccc;
+    margin-top: 4px;
+}

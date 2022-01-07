@@ -1,6 +1,6 @@
 ---
 title: Movie Recommendation System
-stack: HTML, CSS, Bootstrap, Javascript & Django
+stack: HTML, CSS, Bootstrap, Javascript, Django & Machine Learning
 slug: movie-recommendation-system
 ---
 
