@@ -2,6 +2,7 @@
 title: Blogs Web App
 stack: HTML, CSS, Bootstrap, Vannila Js, Django Rest Framework
 slug: blogs-web-app
+date: 2021-02-01T00:00:00+00:00
 ---
 
 ### Blogs Web Application
