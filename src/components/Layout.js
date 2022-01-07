@@ -3,9 +3,25 @@ import Navbar from './Navbar'
 import '../styles/global.css'
 import { Email } from "@material-ui/icons"
 import { Phone } from "@material-ui/icons"
+import { graphql, useStaticQuery } from 'gatsby'
 
 export default function Layout({ children }) 
 {
+
+  const data = useStaticQuery(graphql`                   
+    {
+      site {
+        siteMetadata {
+          email
+          phone
+        }
+      }
+    }
+  `)
+
+  const { title, email, phone } = data.site.siteMetadata
+  
+
   return (
     <div className="layout">
 
@@ -17,10 +33,9 @@ export default function Layout({ children })
 
 
       <footer>
-        <p style={{color: '#bbb'}}> Copyright &copy; 2022 Dhiraj Kafle 
-
-        <span style={{padding: '10px', color: '#bbb'}}> <Phone /> +977 9847122181 </span>
-        <span style={{padding: '10px', color: '#bbb'}}> < Email /> dhirajkafle553@gmail.com </span>
+        <p style={{color: '#bbb', margin: '8px auto '}}> Copyright &copy; 2022 { title }
+          <span style={{paddingLeft: '10px', color: '#bbb'}}> <Phone /> { phone } </span>
+          <span style={{paddingLeft: '10px', color: '#bbb'}}> < Email /> { email } </span>
         </p>
       </footer>
 

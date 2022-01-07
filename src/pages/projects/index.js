@@ -5,13 +5,14 @@ import { Link,  graphql } from 'gatsby';
 
 const Projects = ({ data }) => {
 
-  const projects = data.allMarkdownRemark.nodes
+  const projects = data.projects.nodes
+  const email = data.contact.siteMetadata.email
 
   return (
     <Layout>
       <div className={styles.portfolio_projects}>
 
-        <h4>Projects & Sites I have created</h4>
+        <h4><strong>Projects & Sites I have created</strong></h4>
 
         <div className={styles.projects}>
           {
@@ -25,7 +26,7 @@ const Projects = ({ data }) => {
             ))
           }
         </div>
-        
+        <p>Like what you see ? Please email me at <span></span>{email} for a quote !</p>
       </div>
     </Layout>
   );
@@ -35,11 +36,12 @@ const Projects = ({ data }) => {
 export default Projects
 
 
-// export page query
+// export Multiple page query
 export const query = graphql`
 
   query ProjectsPage {
-    allMarkdownRemark( sort: {order: DESC, fields: frontmatter___date} ) {
+
+    projects: allMarkdownRemark( sort: {order: DESC, fields: frontmatter___date} ) {
       nodes {
         frontmatter {
           title
@@ -49,6 +51,16 @@ export const query = graphql`
         id
       }
     }
+
+
+    contact: site {
+      siteMetadata {
+        email
+        phone
+      }
+    }
+
+
   }
 
 `

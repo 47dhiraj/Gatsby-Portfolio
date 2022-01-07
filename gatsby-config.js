@@ -26,6 +26,8 @@ module.exports = {
     title: `Dhiraj Kafle`,
     description: `This static site is my Portfolio.`,
     copyright: `Copyright &copy; 2022 Dhiraj Kafle`,
+    email: `dhirajkafle553@gmail.com`,
+    phone: `+977 9847122181`,
 
   },
 
