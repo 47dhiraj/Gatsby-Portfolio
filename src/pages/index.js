@@ -18,9 +18,8 @@ const socialItems = [
   {icon: Facebook, url: "https://www.facebook.com/dhirajkafle553/"},
 ]
 
-export default function Home({ data }) {
+export default function Home() {
 
-  const { title, description } = data.site.siteMetadata
 
   const [show, setShow] = useState(false)
   useEffect(() => setShow(true), [])
@@ -60,7 +59,6 @@ export default function Home({ data }) {
 
         </div>
         
-        <p>{ title } - { description }</p>
 
       </section>
 
@@ -71,15 +69,3 @@ export default function Home({ data }) {
 
 
 
-export const query = graphql`
-
-  query SiteInfo {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-
-`

@@ -10,7 +10,7 @@ module.exports = {
 
   siteMetadata: {
 
-    title: `Dhiraj's Portfolio`,
+    title: `Dhiraj Kafle`,
     description: `This static site is my Portfolio.`,
     copyright: `Copyright &copy; 2022 Dhiraj Kafle`,
 
