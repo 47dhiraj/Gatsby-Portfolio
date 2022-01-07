@@ -11,6 +11,8 @@ import { IconButton } from "@material-ui/core"
 
 import Zoom from "@material-ui/core/Zoom"
 
+import { StaticImage } from "gatsby-plugin-image"
+
 
 const socialItems = [
   {icon: GitHub, url: "https://github.com/47dhiraj"},
@@ -54,8 +56,10 @@ export default function Home() {
               ))
             }
           </Grid>
+          
+          <StaticImage src="../images/profile.jpg" alt="Profile Pic" placeholder="blurred" layout="constrained" width={420} height={600} style={{borderRadius: '25px'}} />
 
-          <img src="/profile.jpg" alt="Profile Pic" style={{ maxWidth: '100%', height: '420px', borderRadius: '25px'  }} />
+          {/* <img src="/profile.jpg" alt="Profile Pic" style={{ maxWidth: '100%', height: '420px', borderRadius: '25px'  }} /> */}
 
         </div>
         

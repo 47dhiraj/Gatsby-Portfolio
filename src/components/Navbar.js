@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Navbar() {
 
@@ -22,7 +23,8 @@ export default function Navbar() {
 
             <div class="navbar__brand">
 
-                <img class="navbar__logo" src="/avatar.png" alt="FullStack Web Developer, Nepal" />
+                <StaticImage src="../images/avatar.png" alt="A dinosaur" placeholder="blurred" layout="constrained" width={35} />
+                {/* <img class="navbar__logo" src="/avatar.png" alt="FullStack Web Developer, Nepal" /> */}
 
                 <Link to="/">
                     <strong style={{ fontSize: '1.5em', maxWidth: '100%' }}>{ title }</strong>
