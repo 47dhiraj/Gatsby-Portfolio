@@ -1,0 +1,26 @@
+.about {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.about div {
+    padding: 10px;
+}   
+
+.about div h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about div h3 {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.about div p {
+    font-size: 1.1em;
+}

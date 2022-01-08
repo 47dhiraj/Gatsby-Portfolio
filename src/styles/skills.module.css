@@ -1,0 +1,19 @@
+.container {
+
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;             
+    grid-gap: 40px;
+}
+
+.item {
+    width: 6rem;
+    height: 6rem;
+    transition: width 0.3s;
+}
+
+.item:hover {
+    width: 4.5rem;
+    height: 5rem;
+}
+
