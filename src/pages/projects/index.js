@@ -14,7 +14,7 @@ const Projects = ({ data }) => {
     <Layout>
       <div className={styles.portfolio_projects}>
 
-        <h4><strong>Projects & Sites I have created</strong></h4>
+        <h2><strong>Projects & Sites I have created</strong></h2>
 
         <div className={styles.projects}>
           {

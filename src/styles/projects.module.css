@@ -3,20 +3,20 @@
 }
 
 .portfolio_projects > h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-top: 20px;
 }
 
 .portfolio_projects > h4 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 100;
 }
 
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;             /* 3 columns in a row vaneko */
-    grid-gap: 80px;
-    margin: 80px 20px;
+    grid-gap: 30px;
+    margin: 50px 20px;
 }
 
 .projects h3 {
@@ -27,5 +27,5 @@
 
 .projects p {
     color: #ccc;
-    margin-top: 4px;
+    margin-top: 2px;
 }

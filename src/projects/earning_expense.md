@@ -5,6 +5,7 @@ slug: earning-expense-tracker
 date: 2021-03-01T00:00:00+00
 thumb: ../images/thumbs/drums.png
 featuredImg: ../images/featured/drums-banner.png
+githublink: "https://github.com/47dhiraj/DRF-Earning-Expense"
 ---
 
 ### Earning and Expense Tracking System

@@ -5,6 +5,7 @@ slug: blogs-web-app
 date: 2021-02-01T00:00:00+00:00
 thumb: ../images/thumbs/food.png
 featuredImg: ../images/featured/food-banner.png
+githublink: "https://github.com/47dhiraj/DRF-Blog-Project"
 ---
 
 ### Blogs Web Application
