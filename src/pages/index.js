@@ -14,11 +14,13 @@ import Zoom from "@material-ui/core/Zoom"
 import { StaticImage } from "gatsby-plugin-image"
 
 
+
 const socialItems = [
   {icon: GitHub, url: "https://github.com/47dhiraj"},
   {icon: LinkedIn, url: "https://www.linkedin.com/in/dhiraj-kafle-4a19781a3/"},
   {icon: Facebook, url: "https://www.facebook.com/dhirajkafle553/"},
 ]
+
 
 export default function Home() {
 
@@ -36,7 +38,9 @@ export default function Home() {
             <h2>Code, The Logic !</h2>
             <h3>IT Engineer and Passionate Pragmatice Developer</h3>
 
-            <Link className={styles.btn} to="/resume"> View Resume </Link>
+
+            <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank"> View Resume </a>
+          
           </div>
         </Zoom>
 

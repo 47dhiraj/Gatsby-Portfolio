@@ -1,27 +1,35 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Layout from '../../components/Layout';
 import * as styles from '../../styles/projects.module.css'
 import { Link,  graphql } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Zoom from "@material-ui/core/Zoom"
+
+
 
 const Projects = ({ data }) => {
 
   const projects = data.projects.nodes
   const email = data.contact.siteMetadata.email
   
+  const [show, setShow] = useState(false)
+  useEffect(() => setShow(true), [])
+
 
   return (
     <Layout>
       <div className={styles.portfolio_projects}>
 
-        <h2><strong>Projects & Sites I have created</strong></h2>
+        <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
+          <h2><strong>Projects & Sites I have created</strong></h2>
+        </Zoom>
 
         <div className={styles.projects}>
           {
             projects.map(project => (
               <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
                 <div>
-                  <GatsbyImage image={ getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData) } alt={project.frontmatter.title} quality={100} style={{ borderRadius: '15px' }} />
+                  <GatsbyImage image={ getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData) } alt={project.frontmatter.title} quality={100} style={{ borderRadius: '12px' }} />
                   <h3>{ project.frontmatter.title }</h3>
                   <p>{ project.frontmatter.stack }</p>
                 </div>

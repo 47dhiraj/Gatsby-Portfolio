@@ -40,7 +40,8 @@ export default function Navbar() {
                 <Link to="/about"> About Me </Link>
                 <Link to="/skills"> Skills </Link>
                 <Link to="/projects"> Projects </Link>
-                <Link to="/resume"> Resume</Link>
+
+                {/* <a rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank"> View Resume </a> */}
 
             </div>
 

@@ -1,19 +1,26 @@
 .container {
 
-    margin-top: 30px;
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;             
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;              */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
     grid-gap: 40px;
 }
 
 .item {
     width: 6rem;
     height: 6rem;
-    transition: width 0.3s;
+    /* transition: width 0.3s, height 0.4s; */
+
+    transition: transform .25s;
+    margin: 0 auto;
 }
+
+/* .item:hover {
+    width: 4.5rem;
+    height: 5.5rem;
+} */
 
 .item:hover {
-    width: 4.5rem;
-    height: 5rem;
+    transform: scale(1.6);
 }
-
