@@ -3,8 +3,8 @@ title: Blogs Web App
 stack: HTML, CSS, Bootstrap, Vannila Js, Django Rest Framework
 slug: blogs-web-app
 date: 2021-02-01T00:00:00+00:00
-thumb: ../images/thumbs/food.png
-featuredImg: ../images/featured/food-banner.png
+thumb: ../images/thumbs/blogs.png
+featuredImg: ../images/featured/blog_detail.png
 githublink: "https://github.com/47dhiraj/DRF-Blog-Project"
 ---
 
