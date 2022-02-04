@@ -32,7 +32,11 @@ const ProjectDetails = ({ data }) => {
         <h3>{stack}</h3>
 
         <div className={styles.featured}>
-          <GatsbyImage image={ getImage(featuredImg.childImageSharp.gatsbyImageData) } alt={title} quality={100} style={{ borderRadius: '10px' }} />
+
+          {featuredImg && (
+            <GatsbyImage image={ getImage(featuredImg.childImageSharp.gatsbyImageData) } alt={title} quality={100} style={{ borderRadius: '10px' }} />
+          )}
+
         </div>
 
         <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
