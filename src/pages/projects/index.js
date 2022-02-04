@@ -30,7 +30,7 @@ const Projects = ({ data }) => {
               <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
                 <div>
 
-                  {project.frontmatter.thumb.childImageSharp.gatsbyImageData && (
+                  {project.frontmatter.thumb && (
                     <GatsbyImage image={ getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData) } alt={project.frontmatter.title} quality={100} style={{ borderRadius: '12px' }} />
                   )} 
                   
