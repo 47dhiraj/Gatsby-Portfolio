@@ -29,7 +29,11 @@ const Projects = ({ data }) => {
             projects.map(project => (
               <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
                 <div>
-                  <GatsbyImage image={ getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData) } alt={project.frontmatter.title} quality={100} style={{ borderRadius: '12px' }} />
+
+                  {project.frontmatter.thumb.childImageSharp.gatsbyImageData && (
+                    <GatsbyImage image={ getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData) } alt={project.frontmatter.title} quality={100} style={{ borderRadius: '12px' }} />
+                  )} 
+                  
                   <h3>{ project.frontmatter.title }</h3>
                   <p>{ project.frontmatter.stack }</p>
                 </div>
