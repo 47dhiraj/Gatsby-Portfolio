@@ -10,4 +10,4 @@ githublink: "https://github.com/47dhiraj/Django-Ecommerce"
 
 ### Ecommerce System
 
-**Ecommerce Web Application** is developed using React(both redux and hooks) at the frontend and Django Rest Framework for the Rest API at the backend.
+**Ecommerce Web Application** is developed using React(both redux and hooks) at the frontend and Django Rest Framework for the Rest API at the backend. In this project, i have mainly contributed both as frontend and backend devloper.

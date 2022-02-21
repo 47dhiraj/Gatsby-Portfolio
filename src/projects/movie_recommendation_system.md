@@ -10,4 +10,6 @@ githublink: "https://github.com/47dhiraj/Movie-Recommendation-System-Django-and-
 
 ### Movie Recommendation system
 
-**Movie Recommendation System** is developed using item-item based collaborative filtering with **Pearson Coorelation Algorithm**.
+**Movie Recommendation System** is developed using item-item based collaborative filtering with **Pearson Coorelation Algorithm**. In this project, i have contributed as full stack developer, like developing ML Model, backend development with Django and HTML, CSS & Javascript at the frontend.
+
+This system also provides the facility to view movie trailer and download the movie. This recommendation system provides the general similar movies on each movie detail page and also it provides specific recommendation of movies to the particular users by evaluating the user's past behaviour (rating given to the watched movie).
