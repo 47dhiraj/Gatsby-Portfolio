@@ -23,7 +23,7 @@ export default function About() {
                     
 
                     <p style={{ textAlign: 'justify' }}> 
-                        Hi, It's me <b> Dhiraj Kafle </b> from Kathmandu, Nepal & i love to develop Web Apps & Machine Learning Models. I am intrested in server side development.
+                        Hi, It's me <b> Dhiraj Kafle </b> from Kathmandu, Nepal & i love to develop Web Apps & Machine Learning Models. I am interested in server side development.
                         <br /><br />I am passionate pragmatice developer who loves to explore new logics and science behind it and i do have keen eye for new paradigms, architecture, patterns and principles.
                         <br /><br />I love to explore new languages, indulging my time with my pet projects.
                         <br /><br />I am always striving to broaden my knowledge and sharpen my skills.
