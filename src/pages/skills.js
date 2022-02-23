@@ -10,6 +10,7 @@ const skills = [
     "numpy",
     "pandas",
     "scikit-learn",
+    "jupyter",
     "fastapi",
     "rabbitmq",
     "php",
