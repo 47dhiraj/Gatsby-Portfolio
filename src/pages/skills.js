@@ -18,6 +18,7 @@ const skills = [
     "react",
     "redux",
     "gatsby",
+    "java",
     "jquery",
     "html",
     "css",
