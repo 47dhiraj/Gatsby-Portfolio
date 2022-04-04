@@ -91,3 +91,50 @@ footer {
 
 
 
+
+
+@media (min-width: 280px) and (max-width: 479.98px) {
+  
+  .header {
+    padding: 0px 0px;
+    align-items: flex-start;          
+    display: flex;
+  }
+
+
+  nav .links {
+    display: flex;
+    margin-left: unset;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+  }
+
+
+  .navbar__brand {
+    display: flex;
+    align-items: unset;
+    height: 2rem;
+  }
+
+
+  .content {
+    min-height: 650px;
+  }
+
+  .content div {
+    font-size: small;
+  }
+
+  .content div h2 {
+    margin-top: 50px;
+    font-size: 2em;
+  }
+
+  footer {
+    font-size: 8px;
+  }
+}
+
+
+

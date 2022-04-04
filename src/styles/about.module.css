@@ -24,3 +24,29 @@
 .about div p {
     font-size: 1.1em;
 }
+
+
+
+@media (min-width: 280px) and (max-width: 479.98px) {
+  
+    .about {
+        margin-top: 50px;
+        grid-gap: 0px;
+    }
+    
+
+    .about div {
+        padding: 5px;
+    } 
+
+
+    .about div h2 {
+        font-size: 12px;
+    }
+  
+    .about div p {
+        font-size: x-small;
+    }
+
+
+  }
