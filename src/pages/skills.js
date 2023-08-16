@@ -24,7 +24,7 @@ const skills = [
     "css",
     "docker",
     "postgresql",
-    "mysql",
+    "sql",
     "git",
     "linux",
     "ubuntu",
