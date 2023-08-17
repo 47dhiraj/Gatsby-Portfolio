@@ -13,6 +13,7 @@ const skills = [
     "django",
     "fastapi",
     "html",
+    "react",
     "docker",
     "postgresql",
     "sql",
