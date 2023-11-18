@@ -60,8 +60,8 @@ export default function About() {
                     </Zoom>
 
                     <p style={{ textAlign: 'justify' }}>
-                        <b><span style={{ fontSize: '3em' }}>. </span> 17th September, 2020</b>
-                        <br />Started to work as Web Developer in <b> Tech Dock Nepal Pvt. Ltd </b>.  
+                        <b><span style={{ fontSize: '3em' }}>. </span>  May 2021 to June 2022</b>
+                        <br />Worked as a Python developer in <b> Tech Dock Nepal Pvt. Ltd</b>.  
                         <br />
                         
                         
