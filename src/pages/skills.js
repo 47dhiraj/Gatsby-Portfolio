@@ -19,6 +19,7 @@ const skills = [
     "sql",
     "git",
     "linux",
+    "dbeaver",
     "pycharm",
     "vsc",
   ];
