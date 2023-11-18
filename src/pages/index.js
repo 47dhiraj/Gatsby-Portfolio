@@ -47,7 +47,7 @@ export default function Home() {
 
         <div style={{ display: 'flex', flexDirection: 'row'}}>
 
-          <Grid Container style={{ marginTop: 'auto' }}>
+          <Grid Container style={{ marginTop: 'auto', marginLeft: 'auto' }}>
             {
               socialItems.map((item) => (
                 <Grid item  key={item.icon}>
