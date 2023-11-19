@@ -18,7 +18,7 @@ export default function About() {
                 <div style={{ borderRight: '3px solid #ff007f' }}>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '200ms' : '0ms' }} >
-                        <h2> Myself</h2>
+                        <h2> Self-Introduction</h2>
                     </Zoom>
                     
 
