@@ -12,7 +12,6 @@ const skills = [
     "fastapi",
     "django",
     "react",
-    "html",
     "docker",
     "sql",
     "postgresql",
@@ -20,9 +19,10 @@ const skills = [
     "git",
     "linux",
     "dbeaver",
-    "tableau",
     "pycharm",
     "vsc",
+    "tableau",
+    "excel"
   ];
 
 
