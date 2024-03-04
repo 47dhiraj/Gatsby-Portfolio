@@ -7,11 +7,9 @@ import Zoom from "@material-ui/core/Zoom"
 const skills = [
     "python",
     "pandas",
-    "numpy",
     "scikit-learn",
     "fastapi",
     "django",
-    "react",
     "docker",
     "sql",
     "jupyter",
@@ -20,9 +18,7 @@ const skills = [
     "linux",
     "dbeaver",
     "pycharm",
-    "vsc",
-    "tableau",
-    "excel"
+    "vsc"
   ];
 
 
