@@ -21,18 +21,26 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    
+
     {
-      resolve: `gatsby-source-filesystem`,   // markdown file haru ko lagi pani source dinnai parcha
+      resolve: `gatsby-source-filesystem`,   // projects markdown file haru ko lagi source diyeko
       options: {
         name: `projects`,
         path: `${__dirname}/src/projects/`,
       },
     },
 
+    {
+      resolve: `gatsby-source-filesystem`,  // blogs markdown file haru ko lagi source diyeko
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/src/blogs/`,
+      },
+    },
+
   ],
 
-  
+
   siteMetadata: {                           // site ko metadata chai vani yesari lekhna sakincha
 
     title: `Dhiraj Kafle`,

@@ -1,11 +1,16 @@
-const path = require(`path`)
+const path = require(`path`);
 
 
 exports.createPages = async ({ graphql, actions }) => {
 
-  const { data } = await graphql(`
-    query Articles {
-      allMarkdownRemark {
+  const { createPage } = actions;
+
+
+
+  // 1️⃣ Create project pages
+  const projectResult = await graphql(`
+    {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
         nodes {
           frontmatter {
             slug
@@ -13,19 +18,79 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
 
-  data.allMarkdownRemark.nodes.forEach(node => {
 
-    actions.createPage({
-      path: '/projects/'+ node.frontmatter.slug,
+  projectResult.data.allMarkdownRemark.nodes.forEach(node => {
+    createPage({
+      path: `/projects/${node.frontmatter.slug}`,
       component: path.resolve('./src/templates/project-details.js'),
-      context: { slug: node.frontmatter.slug }
-    })
+      context: { slug: node.frontmatter.slug },
+    });
+  });
 
-  })
+
+
+
+
+
+  // 2️⃣ Create blog pages
+  const blogResult = await graphql(`
+    {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/blogs/" } }) {
+        nodes {
+          frontmatter {
+            slug
+          }
+        }
+      }
+    }
+  `);
+
+
+  blogResult.data.allMarkdownRemark.nodes.forEach(node => {
+    createPage({
+      path: `/blogs/${node.frontmatter.slug}`,
+      component: path.resolve('./src/templates/blog-details.js'),
+      context: { slug: node.frontmatter.slug },
+    });
+  });
+
+
+
+};
+
+
+
+// const path = require(`path`)
+
+
+// exports.createPages = async ({ graphql, actions }) => {
+
+//   const { data } = await graphql(`
+//     query Articles {
+//       allMarkdownRemark {
+//         nodes {
+//           frontmatter {
+//             slug
+//           }
+//         }
+//       }
+//     }
+//   `)
+
+
+//   data.allMarkdownRemark.nodes.forEach(node => {
+
+//     actions.createPage({
+//       path: '/projects/'+ node.frontmatter.slug,
+//       component: path.resolve('./src/templates/project-details.js'),
+//       context: { slug: node.frontmatter.slug }
+//     })
+
+//   })
   
 
-}
+// }
 
