@@ -70,7 +70,7 @@ export const query = graphql`
         title
         featuredImgs {
           childImageSharp {
-            gatsbyImageData(height: 550, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 1168, layout: FIXED, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
         githublink
