@@ -11,7 +11,7 @@ const ProjectDetails = ({ data }) => {
   console.log(data)
 
   const { html } = data.markdownRemark
-  const { title, stack, featuredImg, githublink } = data.markdownRemark.frontmatter
+  const { title, stack, featuredImgs, githublink } = data.markdownRemark.frontmatter
 
   return (
 
@@ -28,25 +28,35 @@ const ProjectDetails = ({ data }) => {
             </Link>
           </span>
         </h2>
-        
+
         <h3>{stack}</h3>
 
         <div className={styles.featured}>
 
-          {featuredImg && (
-            <GatsbyImage image={ getImage(featuredImg.childImageSharp.gatsbyImageData) } alt={title} quality={100} style={{ borderRadius: '10px' }} />
-          )}
+          {featuredImgs && featuredImgs.map((img, idx) => (
+            <GatsbyImage
+              key={idx}
+              image={getImage(img.childImageSharp.gatsbyImageData)}
+              alt={`${title} - Image ${idx + 1}`}
+              quality={100}
+              style={{
+                borderRadius: "10px",
+                marginBottom: "1rem",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
+              }}
+            />
+          ))}
 
         </div>
 
         <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
 
       </div>
-      
+
     </Layout>
   )
 }
- 
+
 export default ProjectDetails
 
 
@@ -58,7 +68,7 @@ export const query = graphql`
       frontmatter {
         stack
         title
-        featuredImg {
+        featuredImgs {
           childImageSharp {
             gatsbyImageData(height: 540, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }

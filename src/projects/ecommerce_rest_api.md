@@ -4,7 +4,8 @@ stack: HTML, CSS, Bootstrap, React, Django Rest Framework
 slug: ecommerce-web-app
 date: 2021-05-01T00:00:00+00
 thumb: ../images/thumbs/ecommerce.png
-featuredImg: ../images/featured/ecommerce-banner.png
+featuredImg: 
+    - ../images/featured/ecommerce-banner.png
 githublink: "https://github.com/47dhiraj/Django-Ecommerce"
 ---
 

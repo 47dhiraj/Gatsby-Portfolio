@@ -4,7 +4,8 @@ stack: HTML, CSS, Bootstrap, Vannila Js, Django Rest Framework
 slug: earning-expense-tracker
 date: 2021-03-01T00:00:00+00
 thumb: ../images/thumbs/income.png
-featuredImg: ../images/featured/expenses.png
+featuredImg: 
+    - ../images/featured/expenses.png
 githublink: "https://github.com/47dhiraj/DRF-Earning-Expense"
 ---
 
