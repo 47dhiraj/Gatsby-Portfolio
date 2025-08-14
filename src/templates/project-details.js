@@ -44,6 +44,11 @@ const ProjectDetails = ({ data }) => {
                 marginBottom: "3rem",
                 boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
               }}
+              imgStyle={{
+                maxWidth: "100%",
+                height: "auto",
+                borderRadius: "10px"
+              }}
             />
           ))}
 
@@ -70,7 +75,7 @@ export const query = graphql`
         title
         featuredImgs {
           childImageSharp {
-            gatsbyImageData(width: 1182, layout: FIXED, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 1182, layout: CONSTRAINED, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
         githublink
