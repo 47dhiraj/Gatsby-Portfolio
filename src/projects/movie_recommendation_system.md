@@ -5,7 +5,12 @@ slug: movie-recommendation-system
 date: 2021-07-01T00:00:00+00:00
 thumb: ../images/projects/thumbs/movies.png
 featuredImgs: 
-  - ../images/projects/featured/movies-banner.png
+  - ../images/projects/featured/movie_landing_page.jpg
+  - ../images/projects/featured/movie_general_recommendation.jpg
+  - ../images/projects/featured/movie_signin.jpg
+  - ../images/projects/featured/movie_admin_dashboard.jpg
+  - ../images/projects/featured/movie_user_specific_recommendations.jpg
+  - ../images/projects/featured/movie_pearson_correlation_heatmap.jpg
 githublink: "https://github.com/47dhiraj/NextGen_Movie_Recommender"
 ---
 
