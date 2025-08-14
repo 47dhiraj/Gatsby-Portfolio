@@ -1,6 +1,6 @@
 ---
-title: Budget Tracker App
-stack: JSX, CSS, ReactJs, Firebase
+title: BUDGET TRACKER
+stack: JSX, CSS, React, Firebase
 slug: budget-tracker-web-app
 date: 2022-02-10T00:00:00+00:00
 thumb: ../images/projects/thumbs/budget_tracker.png

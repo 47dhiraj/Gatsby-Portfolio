@@ -1,5 +1,5 @@
 ---
-title: Earning Expense Tracker
+title: EARNING EXPENSE TRACKER
 stack: HTML, CSS, Bootstrap, Vannila Js, Django Rest Framework
 slug: earning-expense-tracker
 date: 2021-03-01T00:00:00+00

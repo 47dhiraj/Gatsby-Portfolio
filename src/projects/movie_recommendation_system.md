@@ -1,12 +1,12 @@
 ---
-title: Movie Recommendation System
-stack: HTML, CSS, Bootstrap, Javascript, Django & Machine Learning
+title: NEXT GEN MOVIE RECOMMENDER
+stack: HTML, CSS, Bootstrap, Javascript, Pandas, Scikit, Django, ML Algorithms
 slug: movie-recommendation-system
 date: 2021-07-01T00:00:00+00:00
 thumb: ../images/projects/thumbs/movies.png
 featuredImgs: 
   - ../images/projects/featured/movies-banner.png
-githublink: "https://github.com/47dhiraj/Movie-Recommendation-System-Django-and-ML"
+githublink: "https://github.com/47dhiraj/NextGen_Movie_Recommender"
 ---
 
 ### Movie Recommendation system

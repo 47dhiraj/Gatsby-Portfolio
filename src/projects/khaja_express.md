@@ -1,6 +1,6 @@
 ---
 title: KHAJA EXPRESS
-stack: Python, Django, JS, GIT, PostgreSQL, DBeaver, railway, cloudinary 
+stack: Django, Vannila JS, GIT, PostgreSQL, DBeaver, Railway, Cloudinary 
 slug: khaja-express-web-app
 date: 2025-07-10T00:00:00+00:00
 thumb: ../images/projects/thumbs/khaja-express.jpg
