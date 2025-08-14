@@ -23,3 +23,68 @@
     margin-bottom: 50px;
   }
   
+
+/* Inline code style */
+.html code {
+  font-family: 'Fira Code', monospace;
+  background-color: rgba(255, 255, 255, 0.15); /* subtle highlight on purple */
+  color: #ffffff; /* white text */
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.html pre {
+  background-color: rgba(0, 0, 0, 0.2); /* dark semi-transparent for purple bg */
+  color: #ffffff; /* white text */
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-family: 'Fira Code', monospace;
+  margin: 1.5rem 0;
+}
+
+
+/* Tables from markdown blog files */
+.html table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  text-align: left;
+  color: #ffffff; /* white text for table content */
+}
+
+.html th,
+.html td {
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle white border */
+  padding: 0.75rem 1rem;
+}
+
+.html th {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle white highlight */
+  font-weight: bold;
+}
+
+.html tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05); /* light transparent row */
+}
+
+.html tr:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* highlight on hover */
+}
+
+.html caption {
+  caption-side: bottom;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #f0f0ff; /* subtle light color for caption */
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  .html table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
