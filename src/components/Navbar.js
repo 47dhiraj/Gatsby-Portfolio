@@ -38,9 +38,9 @@ export default function Navbar() {
 
                 <Link to="/"> Home </Link>
                 <Link to="/about"> About Me </Link>
-                <Link to="#"> Blogs </Link>
                 <Link to="/skills"> Skills </Link>
                 <Link to="/projects"> Projects </Link>
+                <Link to="/blogs"> Blogs </Link>
 
                 {/* <a rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank"> View Resume </a> */}
 

@@ -35,31 +35,33 @@ exports.createPages = async ({ graphql, actions }) => {
 
 
 
-  // // For blogs pages
-  // const blogResult = await graphql(`
-  //   {
-  //     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/blogs/" } }) {
-  //       nodes {
-  //         frontmatter {
-  //           slug
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
+  // For blogs pages
+  const blogResult = await graphql(`
+    {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/blogs/" } }) {
+        nodes {
+          frontmatter {
+            slug
+          }
+        }
+      }
+    }
+  `);
 
 
-  // blogResult.data.allMarkdownRemark.nodes.forEach(node => {
-  //   createPage({
-  //     path: `/blogs/${node.frontmatter.slug}`,
-  //     component: path.resolve('./src/templates/blog-details.js'),
-  //     context: { slug: node.frontmatter.slug },
-  //   });
-  // });
+  blogResult.data.allMarkdownRemark.nodes.forEach(node => {
+    createPage({
+      path: `/blogs/${node.frontmatter.slug}`,
+      component: path.resolve('./src/templates/blog-details.js'),
+      context: { slug: node.frontmatter.slug },
+    });
+  });
 
 
 
 };
+
+
 
 
 

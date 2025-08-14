@@ -30,13 +30,13 @@ module.exports = {
       },
     },
 
-    // {
-    //   resolve: `gatsby-source-filesystem`,  // blogs markdown file haru ko lagi source diyeko
-    //   options: {
-    //     name: `blogs`,
-    //     path: `${__dirname}/src/blogs/`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,  // blogs markdown file haru ko lagi source diyeko
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/src/blogs/`,
+      },
+    },
 
   ],
 
