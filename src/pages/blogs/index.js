@@ -60,7 +60,7 @@ export const query = graphql`
   query BlogsPage {
     blogs: allMarkdownRemark(
       sort: { order: DESC, fields: frontmatter___date }
-      filter: { fileAbsolutePath: { regex: "/blogs/" } }
+      filter: { fields: { sourceInstanceName: { eq: "blogs" } } }
     ) {
       nodes {
         frontmatter {

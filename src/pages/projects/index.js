@@ -56,7 +56,7 @@ export const query = graphql`
   query ProjectsPage {
     projects: allMarkdownRemark(
       sort: { order: DESC, fields: frontmatter___date }
-      filter: { fileAbsolutePath: { regex: "/projects/" } }
+      filter: { fields: { sourceInstanceName: { eq: "projects" } } }
     ) {
       nodes {
         frontmatter {
