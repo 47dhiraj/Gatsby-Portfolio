@@ -3,20 +3,20 @@ title: KHAJA EXPRESS
 stack: Python, Django, JS, GIT, PostgreSQL, DBeaver, railway, cloudinary 
 slug: khaja-express-web-app
 date: 2025-07-10T00:00:00+00:00
-thumb: ../images/thumbs/khaja-express.jpg
+thumb: ../images/projects/thumbs/khaja-express.jpg
 featuredImgs: 
-  - ../images/featured/khaja_landing_page.jpg
-  - ../images/featured/khaja_signup.jpg
-  - ../images/featured/khaja_signin.jpg
-  - ../images/featured/khaja_mealplan_detail.jpg
-  - ../images/featured/khaja_mealplan_detail2.jpg
-  - ../images/featured/khaja_cart_detail.jpg
-  - ../images/featured/khaja_checkout.jpg
-  - ../images/featured/khaja_esewa_payment_integration.jpg
-  - ../images/featured/khaja_dashboard.jpg
-  - ../images/featured/khaja_email_payment_invoice.jpg
-  - ../images/featured/khaja_railway_deployment_django_app.jpg
-  - ../images/featured/khaja_railway_deployment_postgresql.jpg
+  - ../images/projects/featured/khaja_landing_page.jpg
+  - ../images/projects/featured/khaja_signup.jpg
+  - ../images/projects/featured/khaja_signin.jpg
+  - ../images/projects/featured/khaja_mealplan_detail.jpg
+  - ../images/projects/featured/khaja_mealplan_detail2.jpg
+  - ../images/projects/featured/khaja_cart_detail.jpg
+  - ../images/projects/featured/khaja_checkout.jpg
+  - ../images/projects/featured/khaja_esewa_payment_integration.jpg
+  - ../images/projects/featured/khaja_dashboard.jpg
+  - ../images/projects/featured/khaja_email_payment_invoice.jpg
+  - ../images/projects/featured/khaja_railway_deployment_django_app.jpg
+  - ../images/projects/featured/khaja_railway_deployment_postgresql.jpg
 githublink: "https://github.com/47dhiraj/khaja-express"
 ---
 
