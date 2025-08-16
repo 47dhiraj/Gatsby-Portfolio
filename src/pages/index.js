@@ -54,7 +54,9 @@ export default function Home() {
         </Zoom>
 
 
-        <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank"> View CV </a>
+        <div>
+          <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank"> View CV </a>
+        </div>
 
 
 

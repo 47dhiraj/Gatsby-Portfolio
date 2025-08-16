@@ -32,42 +32,56 @@
 
 
 .typing {
-  font-family: "Montserrat";
+  font-family: monospace;
   font-size: 1.5rem;
   color: #ffffff;                  /* white text */
   position: relative;
   display: inline-block;
 }
 
+/* Each span hidden by default */
 .typing span {
   position: absolute;
   top: 0;
   left: 0;
-  width: 0;                        /* hidden initially */
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #ffffff; /* cursor */
   opacity: 0;
 }
 
-/* First text: Software Engineer */
+/* Software Engineer (19 chars) */
 .typing span:nth-child(1) {
-  animation: typing 4s steps(20, end) 0s infinite;
+  animation: typing1 4s steps(19, end) 0s infinite;
+  animation-fill-mode: forwards;
 }
 
-/* Second text: Data Engineer */
+/* Data Engineer (13 chars) */
 .typing span:nth-child(2) {
-  animation: typing 4s steps(20, end) 4s infinite;
+  animation: typing2 4s steps(13, end) 4s infinite;
+  animation-fill-mode: forwards;
 }
 
-/* Type + hold + erase */
-@keyframes typing {
-  0%   { width: 0; opacity: 1 }
-  40%  { width: 20ch; opacity: 1 }   /* typed fully */
-  60%  { width: 20ch; opacity: 1 }   /* hold */
-  80%  { width: 0; opacity: 1 }      /* erase */
-  100% { width: 0; opacity: 0 }
+/* Type, hold, instant erase */
+@keyframes typing1 {
+  0%   { width: 0; opacity: 1; }
+  80%  { width: 19ch; opacity: 1; } /* fully typed & hold */
+  81%  { width: 0; opacity: 0; }   /* erase instantly */
+  100% { width: 0; opacity: 0; }
 }
 
+@keyframes typing2 {
+  0%   { width: 0; opacity: 1; }
+  80%  { width: 13ch; opacity: 1; } /* fully typed & hold */
+  81%  { width: 0; opacity: 0; }   /* erase instantly */
+  100% { width: 0; opacity: 0; }
+}
 
+/* Cursor blink (optional) */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
 
+.typing span {
+  animation: blink 0.7s step-end infinite;
+}
