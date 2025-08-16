@@ -21,7 +21,7 @@ const Projects = ({ data }) => {
       <div className={styles.portfolio_projects}>
 
         <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
-          <h2><strong>Projects & Sites I have created</strong></h2>
+          <h2><strong>Projects created</strong></h2>
         </Zoom>
 
         <div className={styles.projects}>

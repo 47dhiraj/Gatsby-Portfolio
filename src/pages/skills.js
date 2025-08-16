@@ -32,7 +32,7 @@ export default function Skills() {          // component ko name sadhai capital 
         <Layout>
 
             <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
-                <h4 style={{ textAlign: 'center' }}>Skills I have Developed</h4>
+                <h4 style={{ textAlign: 'center' }}> Skills Developed </h4>
             </Zoom>
 
             <div className={styles.container}>

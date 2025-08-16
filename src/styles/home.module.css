@@ -33,15 +33,38 @@
 .btn {
     display: inline-block;
     background: #e2157b;
-    margin-top: 60px;
-    padding: 6px 22px;
+    margin-top: 4rem; /* use relative units instead of px */
+    padding: 0.5rem 1.5rem;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: 1.2rem; /* scalable font size */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
+/* Hover effect */
 .btn:hover {
-    background-color: rgb(172, 48, 155);
+    background: #c01465;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn {
+        margin-top: 2rem;
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        margin-top: 1.5rem;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Typing animation effect */
 .typingFixed {

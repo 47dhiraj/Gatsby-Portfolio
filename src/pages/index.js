@@ -61,8 +61,8 @@ export default function Home() {
         {/* Left Column */}
         <div className={styles.leftColumn}>
 
-          <h2>Code, The Logic !</h2>
-          <h3>IT Engineer and Passionate Pragmatic Developer</h3>
+          <h2> Code, The Logic ! </h2>
+          <h3> IT Engineer and Passionate Pragmatic Developer </h3>
 
           <div style={{ height: '1.4em' }}>
             <h4 className={styles.typingFixed}>{displayed}</h4>
@@ -72,7 +72,7 @@ export default function Home() {
              rel="noopener noreferrer" 
              href={`./pdf/resume.pdf`} 
              target="_blank">
-            View CV
+             View CV 
           </a>
 
         </div>
