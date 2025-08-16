@@ -71,13 +71,11 @@ export default function Home() {
 
               <h2>Code, The Logic !</h2>
               <h3>Passionate Pragmatic Developer</h3>
-              <h5 className={styles.typingFixed}>{displayed}</h5>
 
+              <h4 className={styles.typingFixed}>{displayed}</h4>
             </div>
 
           </Zoom>
-
-
 
           <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank">
             View CV

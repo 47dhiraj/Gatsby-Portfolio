@@ -1,9 +1,12 @@
 .header {
     display: grid;
-    grid-template-columns: 2.3fr 1fr;
+    /* grid-template-columns: auto 1fr;              */
+    grid-template-columns: 3fr 2fr;
     /* grid-gap: 30px; */
     align-items: center;
+    column-gap: 30px;
 }
+
 .header h2 {
     font-size: 3em;
     margin-bottom: 20px;
