@@ -46,10 +46,10 @@
 .typingFixed {
     display: inline-block;
     color: #fff;
-    /* border-right: 0px solid #fff; */
+    border-right: 2px solid #fff;
     white-space: nowrap;
     overflow: hidden;
-    min-width: 17ch;
+    min-width: 19ch;
 }
 
 /* Vertical social icons on left side of image */
