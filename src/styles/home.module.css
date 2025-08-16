@@ -50,3 +50,14 @@
   overflow: hidden;
   min-width: 19ch; /* longest role length */
 }
+
+
+/* Vertical social icons on left side of image */
+.socialVertical {
+  position: absolute;
+  left: -50px; /* distance from left of image */
+  bottom: 0;   /* near bottom of image */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;   /* spacing between icons */
+}

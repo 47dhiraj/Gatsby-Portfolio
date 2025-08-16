@@ -62,6 +62,7 @@ export default function Home() {
 
       <section className={styles.header}>
 
+        {/* Left column: Animated Text + View CV button */}
 
         <div className={styles.leftColumn}>
 
@@ -85,22 +86,10 @@ export default function Home() {
 
 
 
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
 
-          <Grid container style={{ marginTop: 'auto', marginLeft: 'auto' }}>
+        {/* RIGHT COLUMN: Profile Image + Vertical Social Icons */}
 
-            {socialItems.map((item) => (
-              <Grid item key={item.icon}>
-                <Link href={item.url} target='_blank'>
-                  <IconButton>
-                    <item.icon />
-                  </IconButton>
-                </Link>
-              </Grid>
-            ))}
-
-          </Grid>
-
+        <div style={{ position: 'relative', display: 'inline-block' }}>
 
           <StaticImage
             src="../images/profile.jpg"
@@ -112,8 +101,21 @@ export default function Home() {
             style={{ borderRadius: '25px' }}
           />
 
+        <div className={styles.socialVertical}>
+
+          {socialItems.map((item) => (
+            <Link href={item.url} target='_blank' key={item.icon}>
+              <IconButton>
+                <item.icon />
+              </IconButton>
+            </Link>
+          ))}
 
         </div>
+
+
+      </div>
+
 
 
       </section>
