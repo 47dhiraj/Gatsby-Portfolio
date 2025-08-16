@@ -56,38 +56,40 @@ export default function Home() {
   }, [roleIndex]);
 
 
-  return (
 
+  return (
     <Layout>
+
       <section className={styles.header}>
 
-        <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }}>
 
-          <div>
+        <div className={styles.leftColumn}>
 
-            <h2>Code, The Logic !</h2>
+          <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }}>
+            
+            <div>
 
-            <h3>Passionate Pragmatic Developer</h3>
+              <h2>Code, The Logic !</h2>
+              <h3>Passionate Pragmatic Developer</h3>
+              <h5 className={styles.typingFixed}>{displayed}</h5>
 
-            <h4 className={styles.typingFixed}>
-              {displayed}
-            </h4>
+            </div>
 
-          </div>
+          </Zoom>
 
-          <div>
+          <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank">
+            View CV
+          </a>
 
-            <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank">
-              View CV
-            </a>
+        </div>
 
-          </div>
 
-        </Zoom>
 
 
         <div style={{ display: 'flex', flexDirection: 'row' }}>
+
           <Grid container style={{ marginTop: 'auto', marginLeft: 'auto' }}>
+
             {socialItems.map((item) => (
               <Grid item key={item.icon}>
                 <Link href={item.url} target='_blank'>
@@ -97,7 +99,9 @@ export default function Home() {
                 </Link>
               </Grid>
             ))}
+
           </Grid>
+
 
           <StaticImage
             src="../images/profile.jpg"
@@ -108,9 +112,13 @@ export default function Home() {
             height={600}
             style={{ borderRadius: '25px' }}
           />
+
+
         </div>
 
+
       </section>
+
     </Layout>
 
   );

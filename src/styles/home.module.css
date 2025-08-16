@@ -14,6 +14,13 @@
     margin-bottom: 20px;
 }
 
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .btn {
     display: inline-block;
     background: #e2157b;
