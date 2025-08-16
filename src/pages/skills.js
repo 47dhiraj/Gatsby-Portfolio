@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Layout from '../components/Layout';
 import * as styles from '../styles/skills.module.css'
-import Zoom from "@material-ui/core/Zoom"
+
 
 
 const skills = [
@@ -31,9 +31,8 @@ export default function Skills() {          // component ko name sadhai capital 
 
         <Layout>
 
-            <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
-                <h4 style={{ textAlign: 'center' }}>Skills I have Developed</h4>
-            </Zoom>
+            <h4 style={{ textAlign: 'center' }}>Skills Developed</h4>
+
 
             <div className={styles.container}>
 

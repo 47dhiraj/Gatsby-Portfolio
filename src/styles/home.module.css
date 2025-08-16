@@ -54,10 +54,10 @@
 .typing-fixed {
   display: inline-block;
   color: #fff;
-  border-right: 2px solid #fff;
+  /* border-right: 0px solid #fff; */
   white-space: nowrap;
   overflow: hidden;
-  min-width: 19ch; /* longest role length */
+  min-width: 17ch; /* longest role length */
 }
 
 

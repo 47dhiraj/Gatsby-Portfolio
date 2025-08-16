@@ -7,9 +7,6 @@ import { GitHub, LinkedIn, Facebook } from "@material-ui/icons";
 
 import { IconButton } from "@material-ui/core";
 
-// import Zoom from "@material-ui/core/Zoom";
-import Grid from "@material-ui/core/Grid";
-
 
 import { StaticImage } from "gatsby-plugin-image";
 

@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 import * as styles from '../../styles/projects.module.css'
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Zoom from "@material-ui/core/Zoom"
+
 
 
 
@@ -20,9 +20,9 @@ const Projects = ({ data }) => {
     <Layout>
       <div className={styles.portfolio_projects}>
 
-        <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
-          <h2><strong>Projects & Sites I have created</strong></h2>
-        </Zoom>
+
+        <h2><strong>Projects Created</strong></h2>
+
 
         <div className={styles.projects}>
           {

@@ -3,7 +3,6 @@ import Layout from '../../components/Layout';
 import * as styles from '../../styles/blogs.module.css'
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Zoom from "@material-ui/core/Zoom"
 
 
 
@@ -20,9 +19,8 @@ const Blogs = ({ data }) => {
     <Layout>
       <div className={styles.portfolio_blogs}>
 
-        <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
-          <h2><strong>Blogs I have posted ...</strong></h2>
-        </Zoom>
+
+        <h2><strong>Blogs posted </strong></h2>
 
         <div className={styles.blogs}>
           {
