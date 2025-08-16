@@ -89,32 +89,32 @@ export default function Home() {
 
         {/* RIGHT COLUMN: Profile Image + Vertical Social Icons */}
 
-        <div style={{ position: 'relative', display: 'inline-block' }}>
+        <div style={styles.rightColumn}>
 
           <StaticImage
             src="../images/profile.jpg"
             alt="Profile Pic"
             placeholder="blurred"
             layout="constrained"
-            width={420}
-            height={600}
+            width={320}
+            height={450}
             style={{ borderRadius: '25px' }}
           />
 
-        <div className={styles.socialVertical}>
 
-          {socialItems.map((item) => (
-            <Link href={item.url} target='_blank' key={item.icon}>
-              <IconButton>
-                <item.icon />
-              </IconButton>
-            </Link>
-          ))}
+          <div className={styles.socialVertical}>
+
+            {socialItems.map((item) => (
+              <Link href={item.url} target='_blank' key={item.icon}>
+                <IconButton>
+                  <item.icon />
+                </IconButton>
+              </Link>
+            ))}
+
+          </div>
 
         </div>
-
-
-      </div>
 
 
 
