@@ -85,10 +85,6 @@ export default function Home() {
 
         </div>
 
-        
-        <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank">View CV</a>
-
-
 
 
         <div style={{ display: 'flex', flexDirection: 'row' }}>
