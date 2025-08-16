@@ -62,26 +62,29 @@ export default function Home() {
       <section className={styles.header}>
 
         <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }}>
+
           <div>
+
             <h2>Code, The Logic !</h2>
+
             <h3>Passionate Pragmatic Developer</h3>
-            <h4 style={{
-              color: '#fff',
-              borderRight: '2px solid #fff',
-              display: 'inline-block',
-              whiteSpace: 'nowrap',
-              overflow: 'hidden'
-            }}>
+
+            <h4 className={styles.typingFixed}>
               {displayed}
             </h4>
+
           </div>
+
+          <div>
+
+            <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank">
+              View CV
+            </a>
+
+          </div>
+
         </Zoom>
 
-        <div>
-          <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank">
-            View CV
-          </a>
-        </div>
 
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <Grid container style={{ marginTop: 'auto', marginLeft: 'auto' }}>

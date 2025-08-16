@@ -30,3 +30,11 @@
 }
 
 
+.typing-fixed {
+  display: inline-block;
+  color: #fff;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 19ch; /* longest role length */
+}
