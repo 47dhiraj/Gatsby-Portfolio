@@ -33,16 +33,29 @@ export default function Home() {
 
       <section className={styles.header}>
         
-        <Zoom in={show} style={{ transitionDelay: show ? '200ms' : '0ms' }}>
+        <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }}>
+
           <div>
+
             <h2>Code, The Logic !</h2>
-            <h3>IT Engineer and Passionate Pragmatice Developer</h3>
 
+            <h3>Passionate Pragmatice Developer</h3>   
 
-            <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank"> View Resume </a>
-          
+            <h4 className={styles.typing}>
+
+              <span>Software Engineer</span>
+
+              <span>Data Engineer</span>
+
+            </h4>
+
           </div>
+
         </Zoom>
+
+
+        <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank"> View CV </a>
+
 
 
         <div style={{ display: 'flex', flexDirection: 'row'}}>

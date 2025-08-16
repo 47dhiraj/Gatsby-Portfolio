@@ -28,3 +28,46 @@
 .btn:hover {
     background-color: rgb(172, 48, 155);
 }
+
+
+
+.typing {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  color: #ffffff;                  /* white text */
+  position: relative;
+  display: inline-block;
+}
+
+.typing span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;                        /* hidden initially */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffffff; /* cursor */
+  opacity: 0;
+}
+
+/* First text: Software Engineer */
+.typing span:nth-child(1) {
+  animation: typing 4s steps(20, end) 0s infinite;
+}
+
+/* Second text: Data Engineer */
+.typing span:nth-child(2) {
+  animation: typing 4s steps(20, end) 4s infinite;
+}
+
+/* Type + hold + erase */
+@keyframes typing {
+  0%   { width: 0; opacity: 1 }
+  40%  { width: 20ch; opacity: 1 }   /* typed fully */
+  60%  { width: 20ch; opacity: 1 }   /* hold */
+  80%  { width: 0; opacity: 1 }      /* erase */
+  100% { width: 0; opacity: 0 }
+}
+
+
+
