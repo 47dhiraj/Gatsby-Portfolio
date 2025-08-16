@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import * as styles from '../styles/about.module.css'
-
+import Zoom from "@material-ui/core/Zoom"
 
 
 export default function About() {
@@ -17,7 +17,10 @@ export default function About() {
 
                 <div style={{ borderRight: '3px solid #ff007f' }}>
 
-                    <h2> Intro </h2>
+                    <Zoom in={show} style={{ transitionDelay: show ? '200ms' : '0ms' }} >
+                        <h2> Self-Introduction</h2>
+                    </Zoom>
+
 
                     <p style={{ textAlign: 'justify' }}>
                         Hi, It's me <b> Dhiraj Kafle </b> from Kathmandu, Nepal & i love to develop web applications. I am interested in server side development.
@@ -33,8 +36,10 @@ export default function About() {
 
                 <div style={{ borderRight: '3px solid #ff007f' }}>
 
+                    <Zoom in={show} style={{ transitionDelay: show ? '350ms' : '0ms' }} >
+                        <h2> Background</h2>
+                    </Zoom>
 
-                    <h2> Background</h2>
 
                     <p style={{ textAlign: 'justify' }}>
                         As a self learner, I started programming from mid of 2018, started from C++, & then, <b>Python</b>.
@@ -48,9 +53,9 @@ export default function About() {
 
                 <div>
 
-
-                    <h2>Work Experiences</h2>
-
+                    <Zoom in={show} style={{ transitionDelay: show ? '500ms' : '0ms' }} >
+                        <h2> Experiences </h2>
+                    </Zoom>
 
                     <p style={{ textAlign: 'justify' }}>
 
