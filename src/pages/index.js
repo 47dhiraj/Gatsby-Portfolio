@@ -12,13 +12,18 @@ const socialItems = [
   { icon: Facebook, url: "https://www.facebook.com/dhirajkafle553/" }
 ];
 
+
+
 export default function Home() {
+
+
   const [displayed, setDisplayed] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
 
   const roles = ["Software Engineer", "Data Engineer"];
   const typingSpeed = 100;
   const holdDuration = 1000;
+
 
   useEffect(() => {
     let charIndex = 0;
@@ -41,16 +46,25 @@ export default function Home() {
     return () => clearInterval(typingInterval);
   }, [roleIndex]);
 
+
+
+
+
+
   return (
+
     <Layout>
+
       <section className={styles.header}>
         
+
         {/* Left Column */}
         <div className={styles.leftColumn}>
+
           <h2>Code, The Logic !</h2>
           <h3>IT Engineer and Passionate Pragmatic Developer</h3>
 
-          <h4 className={styles.typingFixed}>{displayed}</h4>
+          <h5 className={styles.typingFixed}>{displayed}</h5>
 
           <a className={styles.btn} 
              rel="noopener noreferrer" 
@@ -58,10 +72,13 @@ export default function Home() {
              target="_blank">
             View Resume
           </a>
+
         </div>
+
 
         {/* Right Column: Profile + Vertical Social Icons */}
         <div className={styles.rightColumn}>
+
           <div style={{ position: 'relative', display: 'inline-block' }}>
             
             <StaticImage 
@@ -74,6 +91,7 @@ export default function Home() {
               style={{ borderRadius: '25px' }}
             />
 
+
             <div className={styles.socialVertical}>
               {socialItems.map((item) => (
                 <Link href={item.url} target="_blank" key={item.icon}>
@@ -83,10 +101,14 @@ export default function Home() {
                 </Link>
               ))}
             </div>
+
           </div>
+
         </div>
 
+
       </section>
+
     </Layout>
   );
 }

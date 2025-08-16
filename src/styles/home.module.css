@@ -21,6 +21,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 15vh;
 }
 
 .rightColumn {
@@ -46,10 +47,12 @@
 .typingFixed {
     display: inline-block;
     color: #fff;
-    border-right: 2px solid #fff;
     white-space: nowrap;
     overflow: hidden;
-    min-width: 19ch;
+    /* font-weight: normal; */
+    font-weight: bold;
+    width: 20ch;                /* reserve width equal to longest text */
+    box-sizing: content-box;    /* ensures width is fixed to content */
 }
 
 /* Vertical social icons on left side of image */
