@@ -64,13 +64,15 @@ export default function Home() {
           <h2>Code, The Logic !</h2>
           <h3>IT Engineer and Passionate Pragmatic Developer</h3>
 
-          <h5 className={styles.typingFixed}>{displayed}</h5>
+          <div style={{ height: '1.4em' }}>
+            <h4 className={styles.typingFixed}>{displayed}</h4>
+          </div>
 
           <a className={styles.btn} 
              rel="noopener noreferrer" 
              href={`./pdf/resume.pdf`} 
              target="_blank">
-            View Resume
+            View CV
           </a>
 
         </div>
