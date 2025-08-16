@@ -1,17 +1,32 @@
 .header {
     display: grid;
     grid-template-columns: 2.3fr 1fr;
-    /* grid-gap: 30px; */
-    align-items: center;
+    column-gap: 30px;
+    align-items: start;
 }
+
 .header h2 {
     font-size: 3em;
     margin-bottom: 20px;
 }
+
 .header h3 {
     font-size: 2em;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rightColumn {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .btn {
@@ -19,12 +34,30 @@
     background: #e2157b;
     margin-top: 20px;
     padding: 6px 22px;
-    margin-bottom: 40px;
     border-radius: 10px;
     font-size: x-large;
-    /* font-weight: 500; */
 }
 
 .btn:hover {
     background-color: rgb(172, 48, 155);
+}
+
+/* Typing animation effect */
+.typingFixed {
+    display: inline-block;
+    color: #fff;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 19ch;
+}
+
+/* Vertical social icons on left side of image */
+.socialVertical {
+    position: absolute;
+    left: -50px; /* distance from left of image */
+    bottom: 0;   /* near bottom of image */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;   /* spacing between icons */
 }
