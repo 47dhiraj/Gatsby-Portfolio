@@ -5,6 +5,7 @@ import * as styles from '../styles/home.module.css';
 import { GitHub, LinkedIn, Facebook } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
 import { StaticImage } from "gatsby-plugin-image";
+import Zoom from "@material-ui/core/Zoom"
 
 const socialItems = [
   { icon: GitHub, url: "https://github.com/47dhiraj" },
@@ -47,16 +48,19 @@ export default function Home() {
         
         {/* Left Column */}
         <div className={styles.leftColumn}>
-          <h2>Code, The Logic !</h2>
-          <h3>IT Engineer and Passionate Pragmatic Developer</h3>
 
+          <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
+            <h2>Code, The Logic !</h2>
+            <h3>IT Engineer and Passionate Pragmatic Developer</h3>
+          </Zoom>
+          
           <h4 className={styles.typingFixed}>{displayed}</h4>
 
           <a className={styles.btn} 
              rel="noopener noreferrer" 
              href={`./pdf/resume.pdf`} 
              target="_blank">
-            View Resume
+            View CV
           </a>
         </div>
 
