@@ -4,10 +4,13 @@ import Layout from "../components/Layout";
 import * as styles from '../styles/home.module.css';
 
 import { GitHub, LinkedIn, Facebook } from "@material-ui/icons";
-import Grid from "@material-ui/core/Grid";
+
 import { IconButton } from "@material-ui/core";
 
 import Zoom from "@material-ui/core/Zoom";
+import Grid from "@material-ui/core/Grid";
+import NoSsr from '@material-ui/core/NoSsr';
+
 import { StaticImage } from "gatsby-plugin-image";
 
 const socialItems = [
@@ -66,17 +69,21 @@ export default function Home() {
 
         <div className={styles.leftColumn}>
 
-          <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }}>
-            
-            <div>
+          <NoSsr>
 
-              <h2>Code, The Logic !</h2>
-              <h3>Passionate Pragmatic Developer</h3>
+            <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }}>
 
-              <h4 className={styles.typingFixed}>{displayed}</h4>
-            </div>
+              <div>
 
-          </Zoom>
+                <h2>Code, The Logic !</h2>
+                <h3>Passionate Pragmatic Developer</h3>
+                <h4 className={styles.typingFixed}>{displayed}</h4>
+                
+              </div>
+
+            </Zoom>
+
+          </NoSsr>
 
           <a className={styles.btn} rel="noopener noreferrer" href={`./pdf/resume.pdf`} target="_blank">
             View CV
