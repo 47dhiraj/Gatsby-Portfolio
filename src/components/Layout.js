@@ -34,7 +34,7 @@ export default function Layout({ children })
 
       <footer>
         <p style={{color: '#bbb', margin: '8px auto '}}> Copyright - DHIRAJ KAFLE &copy; 2022 { title }
-          <span style={{paddingLeft: '30px', color: '#bbb'}}> < Email /> { email } </span>
+          <span style={{paddingLeft: '60px', color: '#bbb'}}> < Email /> { email } </span>
         </p>
       </footer>
 

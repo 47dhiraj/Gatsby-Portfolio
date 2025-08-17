@@ -21,8 +21,8 @@ export default function Home() {
   const [roleIndex, setRoleIndex] = useState(0);
 
   const roles = ["Software Engineer", "Data Engineer"];
-  const typingSpeed = 75;
-  const holdDuration = 750;
+  const typingSpeed = 50;
+  const holdDuration = 600;
 
 
   useEffect(() => {
