@@ -21,8 +21,8 @@ export default function Home() {
   const [roleIndex, setRoleIndex] = useState(0);
 
   const roles = ["Software Engineer", "Data Engineer"];
-  const typingSpeed = 100;
-  const holdDuration = 1000;
+  const typingSpeed = 75;
+  const holdDuration = 750;
 
 
   useEffect(() => {
@@ -88,8 +88,8 @@ export default function Home() {
               alt="Profile Pic"
               placeholder="blurred"
               layout="constrained"
-              width={320}
-              height={450}
+              width={356}
+              height={500}
               style={{ borderRadius: '25px' }}
             />
 
