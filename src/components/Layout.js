@@ -33,8 +33,8 @@ export default function Layout({ children })
 
 
       <footer>
-        <p style={{color: '#bbb', margin: '8px auto '}}> Copyright &copy; 2022 { title }
-          <span style={{paddingLeft: '10px', color: '#bbb'}}> < Email /> { email } </span>
+        <p style={{color: '#bbb', margin: '8px auto '}}> Copyright - DHIRAJ KAFLE &copy; 2022 { title }
+          <span style={{paddingLeft: '30px', color: '#bbb'}}> < Email /> { email } </span>
         </p>
       </footer>
 
