@@ -10,11 +10,10 @@ featuredImgs:
 
 <br>
 
-##### Credit & Acknowledgement To: 
+#### Credit & Acknowledgement To:
 
 - 'Madhu Sudan Subedi'
 - https://madhusudhansubedi.com.np 
-
 <br>
 
 ### What is Database Normalization?
