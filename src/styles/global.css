@@ -136,11 +136,12 @@ footer {
 
   .content div {
     font-size: small;
+    margin-top: 8px;
   }
 
   .content div h2 {
-    margin-top: 50px;
     font-size: 2em;
+    margin-top: -5px;
   }
 
 
