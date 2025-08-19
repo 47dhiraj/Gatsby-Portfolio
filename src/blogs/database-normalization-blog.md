@@ -8,12 +8,22 @@ featuredImgs:
   - ../images/blogs/featured/database-normalization.png
 ---
 
+<br>
+
+##### Credit & Acknowledgement To: 
+
+- 'Madhu Sudan Subedi'
+- https://madhusudhansubedi.com.np 
+
+<br>
+
 ### What is Database Normalization?
 
 Database normalization is the process of structuring and organizing relational databases in relational database theory.
 It involves breaking down large tables into smaller and simpler ones while maintaining relationships among them.
 
-### Why is this useful?
+
+#### Why is this useful?
 
 Database normalization is useful for reducing anomalies in database tables. It removes data redundancy, which in turn reduces storage costs. By doing so, the database becomes more manageable and helps obtain results through simple and efficient queries.
 
@@ -25,11 +35,16 @@ Database normalization enhances data integrity, making it more consistent and ac
 
 Let's examine the different normal forms in database normalization with examples:
 
+<br>
+<br>
+<br>
+
 ### First Normal Form (1NF)
 
 This normalization level ensures that each column contains only atomic values, meaning each column holds indivisible values. Each column must have a unique name, and each row in the column should contain a single value. Additionally, all attributes must depend on the primary key.  
 
 Let's look at an example books table.
+
 
 **Books**
 
@@ -39,7 +54,9 @@ Let's look at an example books table.
 | The Da Vinci Code | Dan Brown     | March 18, 2003   | United States  | Mystery, Thriller, Historical Fiction       |
 
 
+
 This table violates the 1NF as the genres column contains multiple values. To normalize it to 1NF, we define the primary key in the books table and create a **Genre_Book** table to store atomic genre records.
+
 
 **Books**
 
@@ -47,6 +64,7 @@ This table violates the 1NF as the genres column contains multiple values. To no
 | ------- | ----------------- |---------------| ---------------- | -------------- |
 | 1       | Dune              | Frank Herbert | August 1, 1965   | United States  | 
 | 2       | The Da Vinci Code | Dan Brown     | March 18, 2003   | United States  |
+
 
 
 **Genre_Book**
@@ -60,13 +78,19 @@ This table violates the 1NF as the genres column contains multiple values. To no
 | 5             | 2       | Thriller           | 
 | 6             | 2       | Historical Fiction |
 
+
 <br>
+<br>
+<br>
+
 
 ### Second Normal Form (2NF)
 
 For a database to be in the second normal form (2NF), it must first be in the first normal form (1NF). Additionally, each non-primary key attribute must depend on the primary key itself. If changing the value of a non-primary key also changes the value of another non-primary key, then it violates the second normal form.
 
 So far, in the **Books** table, the `author_country` column depends on the `author` column. If the author value changes and the author is from a different country as defined in the row, that also needs to be changed.
+
+<br>
 
 **Books**
 
@@ -93,12 +117,16 @@ To achieve 2NF, let's break the books table into two tables: `books` and `author
 
 
 <br>
+<br>
+<br>
 
 ### Third Normal Form (3NF)
 
 To be in the third normal form (3NF), a database must first be in the second normal form (2NF). Additionally, it must remove transitive dependencies by ensuring that each non-key attribute depends only on the primary key.
 
 So far, we have the following tables that are in 2NF:
+
+<br>
 
 **Books**
 
@@ -125,11 +153,15 @@ So far, we have the following tables that are in 2NF:
 | 5             | 2       | Thriller           | 
 | 6             | 2       | Historical Fiction | 
 
+<br>
+
 Issue in 3NF:  
 
 Let's say there is a hidden column `author_dob` in the books table, which is a non-prime attribute (not part of the key) that depends on `author_id`, another non-prime attribute. This creates a transitive dependency: `book_id` → `author_id` → `author_dob`.  
 
 This violates 3NF because `author_dob` depends on `author_id`, not directly on the primary key (`book_id`).  
+
+<br>
 
 Solution:  We should remove `author_dob` from the books table and store it in the authors table, as it directly describes the author. The tables will be as follows:
 
@@ -158,6 +190,8 @@ Solution:  We should remove `author_dob` from the books table and store it in th
 | 5             | 2       | Thriller           | 
 | 6             | 2       | Historical Fiction | 
 
+<br>
+<br>
 <br>
 
 ### Boyce-Codd Normal Form (BCNF)
@@ -196,11 +230,17 @@ To give an example, the genre_description column is added to this table.
 
 This Genre_Book table violates BCNF for the following reasons.
 
+<br>
+
 The issue lies with the functional dependency:
 
 - `genre_name` → `genre_description`
+
 - `genre_name` is not a superkey of the table.
+
 - This violates the BCNF rule because all determinants (left-hand side of a functional dependency) must be superkeys in BCNF.
+
+<br>
 
 To comply with BCNF, we can break down the **Genre_Book** table into two tables: **Genre_Book** and **Genres**.
 
@@ -249,6 +289,8 @@ In the **Genre_Book** table:
 
 - The primary key (`genre_book_id`) determines all other attributes, satisfying BCNF.
 
+<br>
+<br>
 <br>
 
 ### Fourth Normal Form (4NF)
@@ -299,6 +341,8 @@ To fix this, let's split the table into the following two independent tables:
 
 Now, there are no multivalued dependencies, and the tables are in 4NF.
 
+<br>
+<br>
 <br>
 
 ### Fifth Normal Form (5NF)
