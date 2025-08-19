@@ -68,9 +68,10 @@ nav .links {
 
 nav a {
   display: inline-block;
-  margin-left: 20px;
   font-weight: 400;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
+  margin-left: 18px;
+  margin-top: 3.2vh;
   border-bottom: 3px solid transparent;
 }
 

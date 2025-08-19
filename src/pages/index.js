@@ -88,8 +88,8 @@ export default function Home() {
               alt="Profile Pic"
               placeholder="blurred"
               layout="constrained"
-              width={370}
-              height={520}
+              width={389}
+              height={546}
               style={{ borderRadius: '25px' }}
             />
 
