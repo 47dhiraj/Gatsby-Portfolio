@@ -8,12 +8,12 @@ featuredImgs:
   - ../images/blogs/featured/database-normalization.png
 ---
 
-<br>
-
-#### Credit & Acknowledgement To:
-
+<h4 style="font-size: 1.2em; font-weight: bold;">Credit & Acknowledgement To:</h4>
 - 'Madhu Sudan Subedi'
 - https://madhusudhansubedi.com.np 
+
+<br>
+<br>
 <br>
 
 ### What is Database Normalization?
