@@ -22,7 +22,8 @@ const BlogDetails = ({ data }) => {
 
         <h2 style={{ display: 'flex', flexDirection: 'row' }}>{title}</h2>
 
-        <h3>{description}</h3>
+        <h3 style={{ marginTop: '10px' }}>{description}</h3>
+        
         <h4>{pubDate}</h4>
 
         <div className={styles.featured}>
