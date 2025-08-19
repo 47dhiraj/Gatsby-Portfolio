@@ -62,10 +62,10 @@ export default function Home() {
         <div className={styles.leftColumn}>
 
           <h2> Code, The Logic ! </h2>
-          <h3> IT Engineer and Passionate Pragmatic Developer </h3>
+          <h3> 'Transform Data into AI Insights' </h3>
 
           <div style={{ height: '1.4em' }}>
-            <h4 className={styles.typingFixed}>{displayed}</h4>
+            <h4 className={styles.typingFixed}>A {displayed}</h4>
           </div>
 
           <a className={styles.btn} 
@@ -88,8 +88,8 @@ export default function Home() {
               alt="Profile Pic"
               placeholder="blurred"
               layout="constrained"
-              width={389}
-              height={546}
+              width={377}
+              height={530}
               style={{ borderRadius: '25px' }}
             />
 
