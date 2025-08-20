@@ -16,7 +16,7 @@ const skills = [
     "django",
     "fastapi",
     "react",
-    "nodejs",
+    "node",
     "powerbi",
     "tableau",
     "airflow",
@@ -28,6 +28,7 @@ const skills = [
     "postgresql",
     "mongodb",
     "linux",
+    "slack",
     "jira",
     "pycharm",
     "vsc"
