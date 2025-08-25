@@ -6,11 +6,15 @@ import { GitHub, LinkedIn, Facebook } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
 import { StaticImage } from "gatsby-plugin-image";
 
+
+
 const socialItems = [
   { icon: GitHub, url: "https://github.com/47dhiraj" },
   { icon: LinkedIn, url: "https://www.linkedin.com/in/dhiraj-kafle-4a19781a3/" },
   { icon: Facebook, url: "https://www.facebook.com/dhirajkafle553/" }
 ];
+
+
 
 
 
@@ -20,10 +24,12 @@ export default function Home() {
   const [displayed, setDisplayed] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
 
+
+
+
   const roles = ["Software Engineer", "Data Engineer"];
   const typingSpeed = 130;
   const holdDuration = 300;
-
 
   useEffect(() => {
     let charIndex = 0;
@@ -49,6 +55,7 @@ export default function Home() {
 
 
 
+  
 
 
   return (
