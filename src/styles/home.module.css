@@ -75,9 +75,9 @@
 
 
 .wavingHand {
-  width: 50px;                  
-  margin-bottom: 10px;                   
-  animation: wave 2s infinite ease-in-out;
+  width: 38px;                  
+  margin-bottom: 0px;                   
+  animation: wave 1.5s infinite ease-in-out;
 }
 
 
