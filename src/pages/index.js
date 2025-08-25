@@ -95,6 +95,9 @@ export default function Home() {
 
 
             <div className={styles.socialVertical}>
+
+              <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="Waving Hand" className={styles.wavingHand} />
+
               {socialItems.map((item) => (
                 <Link href={item.url} target="_blank" key={item.icon}>
                   <IconButton>
