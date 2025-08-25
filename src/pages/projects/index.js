@@ -28,6 +28,7 @@ const Projects = ({ data }) => {
           {
             projects.map(project => (
               <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
+
                 <div>
 
                   {project.frontmatter.thumb && (
@@ -37,6 +38,7 @@ const Projects = ({ data }) => {
                   <h3>{project.frontmatter.title}</h3>
                   <p>{project.frontmatter.stack}</p>
                 </div>
+                
               </Link>
             ))
           }

@@ -31,6 +31,32 @@
 }
 
 
+.blogs div {
+    position: relative;
+    overflow: hidden;          /* Prevent image overflow when zooming */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Image itself scales smoothly */
+.blogs div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease; /* smooth zoom */
+}
+
+/* Hover effect */
+.blogs div:hover {
+    transform: translateY(-5px);    /* slight lift */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+.blogs div:hover img {
+    transform: scale(1.1); /* smooth zoom-in */
+}
+
 
 
 @media (min-width: 280px) and (max-width: 479.98px) {
