@@ -1,5 +1,5 @@
 ---
-title: 'A Deep Dive on Database Normalization'
+title: 'Mastering Database Normalization'
 slug: database-normalization-blog
 description: 'This post describes the basics of database normalization, including normal forms 1NF, 2NF, 3NF, BCNF, 4NF, and 5NF'
 pubDate: 'Aug 14 2025'
