@@ -57,10 +57,10 @@
 
 
 .blog_title {
-  position: relative; /* Needed for the pseudo-element */
-  display: inline-block; /* Shrink to text width */
-  cursor: pointer; /* Optional, shows it's interactive */
-  transition: color 0.3s ease; /* Optional smooth color change */
+  position: relative;                   /* Needed for the pseudo-element */
+  display: inline-block;                /* Shrink to text width */
+  cursor: pointer;                      /* Optional, shows it's interactive */
+  transition: color 0.2s ease;          /* Optional smooth color change */
 }
 
 .blog_title::after {
@@ -71,11 +71,11 @@
   width: 0;
   height: 2px; /* Thickness of the line */
   background-color: #fff; /* Line color */
-  transition: width 0.3s ease; /* Smooth animation */
+  transition: width 0.2s ease; /* Smooth animation */
 }
 
-.blog_title:hover::after {
-  width: 100%; /* Full width on hover */
+.blogs div:hover .blog_title::after {
+  width: 100%;
 }
 
 
