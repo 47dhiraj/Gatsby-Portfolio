@@ -1,7 +1,7 @@
 ---
 title: 'Docker & Containerization'
 slug: docker
-description: 'A beginner-friendly guide to Docker, covering containerization basics, Docker architecture, Dockerfiles, images, containers, volumes, networks, and Docker Hub. Learn how to build, run, and share applications efficiently using Docker’s core features.'
+description: 'A beginner-friendly guide to Docker, covering containerization basics, Docker architecture, Dockerfiles, images, containers, volumes, networks, and Docker Hub.'
 pubDate: 'Aug 25 2025'
 thumb: ../images/blogs/thumbs/docker.png
 featuredImgs: 
