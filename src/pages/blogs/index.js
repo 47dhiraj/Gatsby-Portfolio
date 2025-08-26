@@ -34,7 +34,7 @@ const Blogs = ({ data }) => {
                     <GatsbyImage image={getImage(blog.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt={blog.frontmatter.title} quality={100} style={{ borderRadius: '12px' }} />
                   )}
 
-                  <h3>{blog.frontmatter.title}</h3>
+                  <h3 className={styles.blog_title}>{blog.frontmatter.title}</h3>
                   <p>{blog.frontmatter.description}</p>
                 </div>
               </Link>
