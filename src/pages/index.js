@@ -20,38 +20,105 @@ const socialItems = [
 
 export default function Home() {
 
+  // const [displayed, setDisplayed] = useState("");
+  // const [roleIndex, setRoleIndex] = useState(0);
+
+  // const roles = ["Software Engineer", "Data Engineer"];
+  // const typingSpeed = 130;
+  // const holdDuration = 300;
+
+  // useEffect(() => {
+  //   let charIndex = 0;
+  //   let typingInterval;
+
+  //   const typeRole = () => {
+  //     if (charIndex < roles[roleIndex].length) {
+  //       setDisplayed(prev => prev + roles[roleIndex][charIndex]);
+  //       charIndex++;
+  //     } else {
+  //       clearInterval(typingInterval);
+  //       setTimeout(() => {
+  //         setDisplayed("");
+  //         setRoleIndex((prev) => (prev + 1) % roles.length);
+  //       }, holdDuration);
+  //     }
+  //   };
+
+  //   typingInterval = setInterval(typeRole, typingSpeed);
+  //   return () => clearInterval(typingInterval);
+  // }, [roleIndex]);
+
+
+
+
 
   const [displayed, setDisplayed] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
-
-
-
 
   const roles = ["Software Engineer", "Data Engineer"];
   const typingSpeed = 130;
   const holdDuration = 300;
 
+
+
   useEffect(() => {
+
     let charIndex = 0;
     let typingInterval;
 
-    const typeRole = () => {
-      if (charIndex < roles[roleIndex].length) {
-        setDisplayed(prev => prev + roles[roleIndex][charIndex]);
-        charIndex++;
-      } else {
-        clearInterval(typingInterval);
-        setTimeout(() => {
-          setDisplayed("");
-          setRoleIndex((prev) => (prev + 1) % roles.length);
-        }, holdDuration);
-      }
+
+    // Function to play a short typing click
+    const playClick = () => {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const oscillator = audioCtx.createOscillator();
+      const gainNode = audioCtx.createGain();
+
+      oscillator.type = "square"; // click-like sound
+      oscillator.frequency.setValueAtTime(800, audioCtx.currentTime); // pitch
+      gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime); // volume
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+
+      oscillator.start();
+      oscillator.stop(audioCtx.currentTime + 0.05); // very short ~50ms click
     };
 
-    typingInterval = setInterval(typeRole, typingSpeed);
-    return () => clearInterval(typingInterval);
-  }, [roleIndex]);
 
+
+    const typeRole = () => {
+
+      if (charIndex < roles[roleIndex].length) {
+        setDisplayed(prev => prev + roles[roleIndex][charIndex]);
+
+        // Play sound for each character
+        playClick();
+
+        charIndex++;
+
+      } else {
+
+        clearInterval(typingInterval);
+
+        setTimeout(() => {
+
+          setDisplayed("");
+
+          setRoleIndex((prev) => (prev + 1) % roles.length);
+          
+        }, holdDuration);
+
+      }
+
+    };
+
+
+
+    typingInterval = setInterval(typeRole, typingSpeed);
+
+    return () => clearInterval(typingInterval);
+
+  }, [roleIndex]);
 
 
 
