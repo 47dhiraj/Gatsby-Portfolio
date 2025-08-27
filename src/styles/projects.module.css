@@ -67,9 +67,9 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2.5px; /* Distance from text */
+  bottom: -2px; /* Distance from text */
   width: 0;
-  height: 2px; /* Thickness of the line */
+  height: 3px; /* Thickness of the line */
   background-color: #fff; /* Line color */
   transition: width 0.4s ease; /* Smooth animation */
 }
