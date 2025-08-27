@@ -20,7 +20,7 @@ const Blogs = ({ data }) => {
     <Layout>
       <div className={styles.portfolio_blogs}>
 
-        <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
+        <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }} >
           <h2><strong>Blogs posted</strong></h2>
         </Zoom>
 

@@ -44,7 +44,7 @@ export default function Skills() {          // component ko name sadhai capital 
 
         <Layout>
 
-            <Zoom in={show} style={{ transitionDelay: show ? '250ms' : '0ms' }} >
+            <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }} >
                 <h4 style={{ textAlign: 'center' }}> Skills Developed </h4>
             </Zoom>
 
