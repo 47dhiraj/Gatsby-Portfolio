@@ -5,6 +5,9 @@ import Zoom from "@material-ui/core/Zoom"
 
 
 const skills = [
+    "c",
+    "c++",
+    "java",
     "python",
     "r",
     "pandas",
@@ -25,6 +28,7 @@ const skills = [
     "sql",
     "git",
     "dbeaver",
+    "mysql",
     "postgresql",
     "mongodb",
     "linux",
