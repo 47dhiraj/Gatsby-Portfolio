@@ -4,12 +4,12 @@
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;              */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
-    grid-gap: 40px;
+    grid-gap: 32px;
 }
 
 .item {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 6.2rem;
     /* transition: width 0.3s, height 0.4s; */
 
     transition: transform .25s;
