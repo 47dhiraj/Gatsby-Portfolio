@@ -4,15 +4,15 @@
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;              */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
-    grid-gap: 32px;
+    grid-gap: 30px;
 }
 
 .item {
-    width: 7rem;
-    height: 6.2rem;
+    width: 6rem;
+    height: 5.8rem;
     /* transition: width 0.3s, height 0.4s; */
 
-    transition: transform .25s;
+    transition: transform .27s;
     margin: 0 auto;
 }
 
