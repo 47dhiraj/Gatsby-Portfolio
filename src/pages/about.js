@@ -34,7 +34,7 @@ export default function About() {
 
     // Base delay after Work Experience header
     const workexp_baseDelay = 560
-    const increment = 160
+    const increment = 220
 
 
 
