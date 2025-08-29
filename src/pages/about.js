@@ -9,11 +9,44 @@ export default function About() {
     const [show, setShow] = useState(false)
     useEffect(() => setShow(true), [])
 
+
+    // List of all work experiences
+    const workExperiences = [
+        {
+            duration: 'Aug 2021 to Oct 2021',
+            role: 'Python Intern',
+            company: 'Dock Tech Nepal'
+        },
+        {
+            duration: 'Aug 2022 to Sept 2023',
+            role: 'Entry Python Developer',
+            company: 'Codesheep'
+        },
+        {
+            duration: 'May 2024 to Present',
+            role: 'Computer Science Secondary Teacher',
+            company: 'Gyan Niketan S. School'
+        }
+    ]
+
+
+
+
+    // Base delay after Work Experience header
+    const workexp_baseDelay = 560
+    const increment = 160
+
+
+
     return (
 
         <Layout>
 
             <div className={styles.about}>
+
+
+
+                
 
                 <div style={{ borderRight: '3px solid #ff007f' }}>
 
@@ -42,7 +75,7 @@ export default function About() {
 
 
                     <p style={{ textAlign: 'justify' }}>
-                        As a self learner, I started programming from mid of 2018, started from C++, & then, <b>Python</b>.
+                        As a self learner, I started programming from mid of 2018, started from C, C++, Java, JavaScript & then, <b>Python</b>.
                         <br /><br />Then i  started to learn <b>Django Framework</b> for developing backend of the web apps. Later on, i also learned python libraries like <b>numpy</b>, <b>pandas</b> & <b>scikit-learn</b>.
                         <br /><br />I also created <b>Movie site</b> with Django & and later learned DRF for the Rest API.
                         <br />I have also learned <b>Fast API</b> and also deployed some ML models.
@@ -57,26 +90,39 @@ export default function About() {
                         <h2> Work Experience </h2>
                     </Zoom>
 
-                    <p style={{ textAlign: 'justify' }}>
 
-                        <b><span style={{ fontSize: '3em' }}>. </span>  Aug 2021 to Oct 2021</b>
-                        <br />Worked as a Python Intern in <b> Dock Tech Nepal</b>.
-                        <br />
-                        <br />
+                    <div style={{ textAlign: 'justify' }}>
 
-                        <b><span style={{ fontSize: '3em' }}>. </span>  Aug 2022 to Sept 2023</b>
-                        <br />Worked as entry Python Developer in <b> Codesheep</b>.
-                        <br />
-                        <br />
+                        {workExperiences.map((exp, idx) => {
 
-                        <b><span style={{ fontSize: '3em' }}>. </span>  May 2024 to Present</b>
-                        <br />Worked as Computer Science Secondary Teacher in <b> Gyan Niketan S.S, Shankhamool.</b>.
-                        <br />
-                        <br />
+                            // logic for calculating delay to show work experiences
+                            const delay = workexp_baseDelay + (idx + 1) * increment
 
-                    </p>
+                            return (
+
+                                <Zoom 
+                                    in={show} 
+                                    key={idx} 
+                                    style={{ transitionDelay: show ? `${delay}ms` : '0ms', display: 'block', marginBottom: '1em' }}
+                                >
+
+                                    <div>
+                                        <b><span style={{ fontSize: '3em' }}>. </span> {exp.duration}</b>
+                                        - Worked as {exp.role} in <b>{exp.company}</b>. <br />
+                                    </div>
+                                </Zoom>
+
+                            )
+
+                        })}
+
+                    </div>
 
                 </div>
+
+
+
+
 
             </div>
 
