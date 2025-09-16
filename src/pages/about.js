@@ -25,7 +25,7 @@ export default function About() {
         {
             duration: 'May 2024 to Present',
             role: 'Computer Science Secondary Teacher',
-            company: 'Gyan Niketan S. School'
+            company: 'In a School'
         }
     ]
 
