@@ -15,17 +15,17 @@ export default function About() {
         {
             duration: 'Aug 2021 to Oct 2021',
             role: 'Python Intern',
-            company: 'Dock Tech Nepal'
+            company: 'Dock Tech Nepal Pvt. Ltd.'
         },
         {
             duration: 'Aug 2022 to Sept 2023',
             role: 'Entry Python Developer',
-            company: 'Codesheep'
+            company: 'Codesheep Pvt. Ltd.'
         },
         {
             duration: 'May 2024 to Present',
-            role: 'Computer Science Secondary Teacher',
-            company: 'In a School'
+            role: 'Secondary Computer Science Teacher',
+            company: 'a School'
         }
     ]
 
@@ -56,7 +56,7 @@ export default function About() {
 
 
                     <p style={{ textAlign: 'justify' }}>
-                        Hi, It's me <b> Dhiraj Kafle </b> from NEPAL and I love to develop web applications. I am interested in server side development.
+                        Hi, It's me <b> DHIRAJ KAFLE </b> from <b>NEPAL</b> and I love to develop web applications. I am interested in server side development.
                         <br /><br />I am passionate pragmatice developer who loves to explore new logics and science behind it and i do have keen eye for new paradigms, architecture, patterns and principles.
                         <br /><br />I love to explore new languages, indulging my time with my pet projects.
                         <br /><br />I am always striving to broaden my knowledge and sharpen my skills.
@@ -77,7 +77,7 @@ export default function About() {
                     <p style={{ textAlign: 'justify' }}>
                         As a self learner, I started programming from mid of 2018, started from C, C++, Java, JavaScript & then, <b>Python</b>.
                         <br /><br />Then i  started to learn <b>Django Framework</b> for developing backend of the web apps. Later on, i also learned python libraries like <b>numpy</b>, <b>pandas</b> & <b>scikit-learn</b>.
-                        <br /><br />I also created <b>Movie site</b> with Django & and later learned DRF for the Rest API.
+                        <br /><br />I also created <b>Movie site</b> with Django & and later learned Django Rest Framework for the Rest API.
                         <br />I have also learned <b>Fast API</b> and also deployed some ML models.
                     </p>
 
@@ -108,7 +108,7 @@ export default function About() {
 
                                     <div>
                                         <b><span style={{ fontSize: '3em' }}>. </span> {exp.duration}</b>
-                                        - Worked as {exp.role} in <b>{exp.company}</b>. <br />
+                                        - Worked as {exp.role} In <b>{exp.company}</b>. <br />
                                     </div>
                                 </Zoom>
 
