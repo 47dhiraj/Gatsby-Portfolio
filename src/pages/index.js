@@ -84,13 +84,13 @@ export default function Home() {
           <div style={{ position: 'relative', display: 'inline-block' }}>
             
             <StaticImage 
+              className={styles.profileImage}
               src="../images/profile.jpg"
               alt="Profile Pic"
               placeholder="blurred"
               layout="constrained"
               width={377}
               height={530}
-              style={{ borderRadius: '25px' }}
             />
 
 

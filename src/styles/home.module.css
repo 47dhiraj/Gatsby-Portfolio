@@ -89,6 +89,17 @@
 }
 
 
+.profileImage {
+  border-radius: 30px;
+  transition: filter 0.3s ease-in-out; 
+}
+
+.profileImage:hover {
+  filter: grayscale(100%);
+}
+
+
+
 @keyframes wave {
   0% { transform: rotate(0deg); }
   20% { transform: rotate(20deg); }

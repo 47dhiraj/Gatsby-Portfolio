@@ -17,7 +17,9 @@ const Projects = ({ data }) => {
 
 
   return (
+
     <Layout>
+
       <div className={styles.portfolio_projects}>
 
         <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }} >
@@ -43,9 +45,13 @@ const Projects = ({ data }) => {
             ))
           }
         </div>
+
         <p>Like what you see ? Please email me at <span></span>{email} for a quote !</p>
+
       </div>
+
     </Layout>
+    
   );
 
 }
