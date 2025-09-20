@@ -9,9 +9,9 @@ import { StaticImage } from "gatsby-plugin-image";
 
 
 const socialItems = [
-  { icon: GitHub, url: "https://github.com/47dhiraj" },
-  { icon: LinkedIn, url: "https://www.linkedin.com/in/dhiraj-kafle-4a19781a3/" },
-  { icon: Facebook, url: "https://www.facebook.com/dhirajkafle553/" }
+  { icon: GitHub, url: "https://github.com/47dhiraj", color: "#24292F" },
+  { icon: LinkedIn, url: "https://www.linkedin.com/in/dhiraj-kafle-4a19781a3/", color: "#0A66C2" },
+  { icon: Facebook, url: "https://www.facebook.com/dhirajkafle553/", color: "#1877F2" }
 ];
 
 
@@ -101,7 +101,7 @@ export default function Home() {
               {socialItems.map((item) => (
                 <Link href={item.url} target="_blank" key={item.icon}>
                   <IconButton>
-                    <item.icon />
+                    <item.icon style={{ color: item.color }} />
                   </IconButton>
                 </Link>
               ))}

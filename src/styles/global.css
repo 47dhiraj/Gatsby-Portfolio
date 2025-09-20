@@ -95,7 +95,7 @@ footer {
   justify-content: center;   /* center horizontally */
   align-items: center;       /* center vertically */
   text-align: center;
-  margin: 150px auto 0 auto;  /* center footer block */
+  margin: 180px auto 0 auto;  /* center footer block */
   font-size: 22px;
   font-weight: 500;
   background: radial-gradient(at top left, rgb(223, 28, 141) 0%, rgb(19, 106, 206) 100%);
