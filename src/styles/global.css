@@ -44,6 +44,7 @@ p {
 }
 
 .navbar__brand {
+  color: #2c69b9;
   display: flex;
   align-items: flex-start;
   height: 2rem;
