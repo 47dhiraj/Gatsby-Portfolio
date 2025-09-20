@@ -58,15 +58,16 @@
 /* Typing animation effect */
 .typingFixed {
     display: inline-block;
-    color: #f12462;
+    color: #e71e72;
     white-space: nowrap;
     overflow: hidden;
     /* font-weight: normal; */
-    font-weight: normal;
+    /* font-weight: bold; */
+    font-weight: 600;
     width: 20ch;                /* reserve width equal to longest text */
     box-sizing: content-box;    /* ensures width is fixed to content */
     min-width: 20ch;            /* width for longest role */
-    height: 1.2em;         /* or exact computed height of h4 */
+    height: 1em;         /* or exact computed height of h4 */
 }
 
 /* Vertical social icons on left side of image */
