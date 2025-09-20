@@ -40,7 +40,7 @@ p {
   max-width: 1200px;
   margin: 25px auto;               
   border-bottom: 5px solid;
-  border-color: #302d2d;
+  border-color: #4d4b4b;
 }
 
 .navbar__brand {
@@ -60,15 +60,15 @@ nav .links {
   display: flex;
   margin-left: auto;
   text-align: right;
-  font-size: 1.5em;
-  color: #000;
+  font-size: 1.3em;
+  color: #1f1d1d;
 }
 
 
 
 nav a {
   display: inline-block;
-  font-weight: bolder;
+  font-weight: bold;
   padding-bottom: 2px;
   margin-left: 18px;
   margin-top: 1.4vh;
@@ -76,7 +76,7 @@ nav a {
 }
 
 nav .links a:hover {
-  border-color: #f1356d;
+  border-color: #fc2968;
 }
 
 
