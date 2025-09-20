@@ -6,14 +6,20 @@
 }
 
 .header h2 {
+    color: #ff007f;
     font-size: 3em;
     margin-bottom: 20px;
 }
 
 .header h3 {
+    color: #ff007f;
     font-size: 2em;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+.header h4 {
+    color: #ff007f;
 }
 
 .leftColumn {
