@@ -12,6 +12,7 @@ export default function Layout({ children })
     {
       site {
         siteMetadata {
+          title
           email
           phone
         }
@@ -33,8 +34,8 @@ export default function Layout({ children })
 
 
       <footer>
-        <p style={{color: '#ffffffff', margin: '8px auto '}}> Copyright - DHIRAJ KAFLE &copy; 2022 { title }
-          <span style={{paddingLeft: '60px', color: '#fff'}}> { email } </span>
+        <p style={{color: '#fff', margin: '8px auto '}}> &copy; 2025 - { title } - All rights reserved.
+          <span style={{paddingLeft: '15px', color: '#fff'}}> { email } </span>
         </p>
       </footer>
 
