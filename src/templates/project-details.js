@@ -42,7 +42,7 @@ const ProjectDetails = ({ data }) => {
               style={{
                 borderRadius: "10px",
                 marginBottom: "3rem",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
+                boxShadow: "0 4px 10px rgba(0,0,0,0.1)"
               }}
               imgStyle={{
                 maxWidth: "100%",
