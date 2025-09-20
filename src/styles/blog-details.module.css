@@ -68,6 +68,7 @@
   border: 1px solid rgba(15, 15, 15, 0.3);
   /* subtle white border */
   padding: 0.75rem 1rem;
+  font-size: 18px;
 }
 
 .html th {
@@ -96,7 +97,7 @@
 
 
 p {
-  font-size: 19px;
+  font-size: 18px;
   margin: 16px auto;
   line-height: 1.5em;
 }
