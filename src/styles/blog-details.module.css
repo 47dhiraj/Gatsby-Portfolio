@@ -59,31 +59,31 @@
   margin: 1.5rem 0;
   font-size: 1rem;
   text-align: center;
-  color: #222020;
+  color: #161616;
   /* white text for table content */
 }
 
 .html th,
 .html td {
-  border: 1px solid rgba(15, 15, 15, 0.3);
+  border: 1px solid rgba(34, 32, 32, 0.3);
   /* subtle white border */
   padding: 0.75rem 1rem;
   font-size: 18px;
 }
 
 .html th {
-  background-color: rgba(117, 103, 103, 0.1);
+  background-color: #f4f4f4;
   /* subtle white highlight */
   font-weight: bold;
 }
 
 .html tr:nth-child(even) {
-  background-color: rgba(58, 53, 53, 0.05);
+  background-color: #f4f4f4;
   /* light transparent row */
 }
 
 .html tr:hover {
-  background-color: rgba(95, 83, 83, 0.15);
+  background-color: #e2dcdc;
   /* highlight on hover */
 }
 
