@@ -48,7 +48,7 @@ export default function About() {
 
                 
 
-                <div style={{ borderRight: '4px solid #3b3131ff' }}>
+                <div style={{ borderRight: '4.5px solid #422d2dff' }}>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '240ms' : '0ms' }} >
                         <h2> Intro </h2>
@@ -67,7 +67,7 @@ export default function About() {
                 </div>
 
 
-                <div style={{ borderRight: '4px solid #3b3131ff' }}>
+                <div style={{ borderRight: '4.5px solid #422d2dff' }}>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '400ms' : '0ms' }} >
                         <h2> Background </h2>
