@@ -1,13 +1,13 @@
 .container {
-    margin-top: 50px;
+    margin-top: 44px;
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;              */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
-    grid-gap: 27px;
+    grid-gap: 24px;
 }
 
 .item {
-    width: 6rem;
+    width: 5.9rem;
     height: 5.8rem;
     /* transition: width 0.3s, height 0.4s; */
 
