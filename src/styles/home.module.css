@@ -19,7 +19,7 @@
 }
 
 .header h4 {
-    color: #f1477a;
+    color: #f12462;
 }
 
 .leftColumn {
@@ -58,7 +58,7 @@
 /* Typing animation effect */
 .typingFixed {
     display: inline-block;
-    color: #f1477a;
+    color: #f12462;
     white-space: nowrap;
     overflow: hidden;
     /* font-weight: normal; */
