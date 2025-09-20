@@ -97,7 +97,7 @@ footer {
   text-align: center;
   margin: 150px auto 0 auto;  /* center footer block */
   font-size: 20px;
-  background: radial-gradient(at top left, rgb(215, 50, 221) 0%, rgb(27, 116, 218) 100%);
+  background: radial-gradient(at top left, rgb(223, 28, 141) 0%, rgb(19, 106, 206) 100%);
   background-repeat: no-repeat;
   min-height: 0px;          /* footer always has height */
   max-width: 1200px;         /* cap width for laptops/desktops */
