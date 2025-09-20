@@ -1,43 +1,48 @@
 .details h2 {
-    font-size: 2em;
-    margin-top: 40px;
-  }
+  color: #225ead;
+  font-size: 2em;
+  margin-top: 40px;
+}
 
-  .details h3 {
-    font-size: 1.6em;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 16px;
-  }
+.details h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
 
-  .details h4 {
-    font-size: 1.2em;
-    font-weight: 200;
-    margin-top: 16px;
-    margin-bottom: 22px;
-  }
+.details h4 {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
 
-  .html {
-    margin-top: 10px;
-  }
+.html {
+  margin-top: 10px;
+}
 
-  .featured {
-    margin-bottom: 50px;
-  }
-  
+.featured {
+  margin-bottom: 50px;
+}
+
 
 /* Inline code style */
 .html code {
   font-family: 'Fira Code', monospace;
-  background-color: rgba(255, 255, 255, 0.15); /* subtle highlight on purple */
-  color: #000; /* white text */
+  background-color: rgba(255, 255, 255, 0.15);
+  /* subtle highlight on purple */
+  color: #000;
+  /* white text */
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
 }
 
 .html pre {
-  background-color: rgba(0, 0, 0, 0.2); /* dark semi-transparent for purple bg */
-  color: #222020; /* white text */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* dark semi-transparent for purple bg */
+  color: #222020;
+  /* white text */
   padding: 1rem;
   overflow-x: auto;
   border-radius: 8px;
@@ -53,33 +58,39 @@
   margin: 1.5rem 0;
   font-size: 1rem;
   text-align: center;
-  color: #222020; /* white text for table content */
+  color: #222020;
+  /* white text for table content */
 }
 
 .html th,
 .html td {
-  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle white border */
+  border: 1px solid rgba(27, 26, 26, 0.3);
+  /* subtle white border */
   padding: 0.75rem 1rem;
 }
 
 .html th {
-  background-color: rgba(255, 255, 255, 0.1); /* subtle white highlight */
+  background-color: rgba(107, 97, 97, 0.1);
+  /* subtle white highlight */
   font-weight: bold;
 }
 
 .html tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.05); /* light transparent row */
+  background-color: rgba(32, 30, 30, 0.05);
+  /* light transparent row */
 }
 
 .html tr:hover {
-  background-color: rgba(255, 255, 255, 0.15); /* highlight on hover */
+  background-color: rgba(63, 55, 55, 0.15);
+  /* highlight on hover */
 }
 
 .html caption {
   caption-side: bottom;
   text-align: right;
   font-size: 0.9rem;
-  color: #222020; /* subtle light color for caption */
+  color: #222020;
+  /* subtle light color for caption */
 }
 
 /* Responsive tables */
@@ -89,4 +100,3 @@
     overflow-x: auto;
   }
 }
-
