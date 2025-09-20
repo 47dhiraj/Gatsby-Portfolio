@@ -19,7 +19,7 @@
 }
 
 .header h4 {
-    color: #2c69b9;
+    color: #f1477a;
 }
 
 .leftColumn {
@@ -58,11 +58,11 @@
 /* Typing animation effect */
 .typingFixed {
     display: inline-block;
-    color: #2c69b9;
+    color: #f1477a;
     white-space: nowrap;
     overflow: hidden;
     /* font-weight: normal; */
-    font-weight: bold;
+    font-weight: normal;
     width: 20ch;                /* reserve width equal to longest text */
     box-sizing: content-box;    /* ensures width is fixed to content */
     min-width: 20ch;            /* width for longest role */

@@ -73,7 +73,7 @@ nav a {
   padding-bottom: 2px;
   margin-left: 18px;
   margin-top: 1.4vh;
-  border-bottom: 3px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 
 nav .links a:hover {
