@@ -98,22 +98,34 @@ export default function Home() {
 
               <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="Waving Hand" className={styles.wavingHand} />
 
-              {socialItems.map((item) => (
+              {/* {socialItems.map((item) => (
                 <Link href={item.url} target="_blank" key={item.icon}>
-                  <IconButton
-                    sx={{
-                          "&:hover": {
-                            boxShadow: `0 0 15px ${item.color}`,
-                            transform: "scale(1.1)",
-                          },
-                        }}
-                  >
-
+                  <IconButton>
                     <item.icon style={{ color: item.color }} />
+                  </IconButton>
+
+                </Link>
+              ))} */}
+
+
+              {socialItems.map((item) => (
+
+                <Link href={item.url} target="_blank" key={item.icon}>
+
+                  <IconButton
+                    className={styles.iconButton}
+                    style={{ color: item.color, "--icon-color": item.color }}
+                  >
+                    
+                    <item.icon />
 
                   </IconButton>
+
                 </Link>
+
               ))}
+
+
             </div>
 
           </div>
