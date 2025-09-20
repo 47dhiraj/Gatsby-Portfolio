@@ -91,11 +91,11 @@
 
 .profileImage {
   border-radius: 30px;
-  transition: filter 0.3s ease-in-out; 
+  transition: filter 0.4s ease-in-out; 
 }
 
 .profileImage:hover {
-  filter: grayscale(100%);
+  filter: grayscale(75%);
 }
 
 
