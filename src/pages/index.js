@@ -100,8 +100,17 @@ export default function Home() {
 
               {socialItems.map((item) => (
                 <Link href={item.url} target="_blank" key={item.icon}>
-                  <IconButton>
+                  <IconButton
+                    sx={{
+                          "&:hover": {
+                            boxShadow: `0 0 15px ${item.color}`,
+                            transform: "scale(1.1)",
+                          },
+                        }}
+                  >
+
                     <item.icon style={{ color: item.color }} />
+
                   </IconButton>
                 </Link>
               ))}
