@@ -3,7 +3,7 @@
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;              */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
-    grid-gap: 24px;
+    grid-gap: 26px;
 }
 
 .item {
@@ -21,7 +21,7 @@
 } */
 
 .item:hover {
-    transform: scale(1.65);
+    transform: scale(1.6);
 }
 
 
