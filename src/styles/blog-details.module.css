@@ -30,14 +30,14 @@
 .html code {
   font-family: 'Fira Code', monospace;
   background-color: rgba(255, 255, 255, 0.15); /* subtle highlight on purple */
-  color: #ffffff; /* white text */
+  color: #000; /* white text */
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
 }
 
 .html pre {
   background-color: rgba(0, 0, 0, 0.2); /* dark semi-transparent for purple bg */
-  color: #ffffff; /* white text */
+  color: #222020; /* white text */
   padding: 1rem;
   overflow-x: auto;
   border-radius: 8px;
@@ -53,7 +53,7 @@
   margin: 1.5rem 0;
   font-size: 1rem;
   text-align: center;
-  color: #ffffff; /* white text for table content */
+  color: #222020; /* white text for table content */
 }
 
 .html th,
@@ -79,7 +79,7 @@
   caption-side: bottom;
   text-align: right;
   font-size: 0.9rem;
-  color: #f0f0ff; /* subtle light color for caption */
+  color: #222020; /* subtle light color for caption */
 }
 
 /* Responsive tables */

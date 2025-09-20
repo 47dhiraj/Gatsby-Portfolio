@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  background: radial-gradient(at top left, rgb(70, 10, 116) 0%, rgb(146, 34, 127) 100%);
+  background: #fff;
   background-repeat: no-repeat;
 }
 
@@ -61,7 +61,7 @@ nav .links {
   margin-left: auto;
   text-align: right;
   font-size: 1.4em;
-  color: #fff;
+  color: #000;
 }
 
 
@@ -120,7 +120,7 @@ footer {
     margin-left: unset;
     text-align: center;
     font-size: 10px;
-    color: #fff;
+    color: #000;
   }
 
 
