@@ -102,7 +102,7 @@
 
 .profileImage {
   border-radius: 30px;
-  transition: filter 0.4s ease-in-out; 
+  transition: filter 0.7s ease-in-out; 
 }
 
 .profileImage:hover {
@@ -113,11 +113,11 @@
 
 
 .iconButton {
-  transition: all 0.5s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 .iconButton:hover {
-  transform: scale(1.22);
+  transform: scale(1.2);
   box-shadow: 0px 0px 12px var(--icon-color);
 }
 
