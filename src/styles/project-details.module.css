@@ -21,3 +21,9 @@
   margin-bottom: 60px;
 }
   
+
+p {
+  font-size: 19px;
+  margin: 16px auto;
+  line-height: 1.5em;
+}
