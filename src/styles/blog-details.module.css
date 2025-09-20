@@ -12,8 +12,9 @@
 }
 
 .details h4 {
-  font-size: 1.2em;
-  font-weight: 200;
+  color: #225ead;
+  font-size: 1.1em;
+  font-weight: 500;
   margin-top: 16px;
   margin-bottom: 22px;
 }
@@ -64,24 +65,24 @@
 
 .html th,
 .html td {
-  border: 1px solid rgba(27, 26, 26, 0.3);
+  border: 1px solid rgba(15, 15, 15, 0.3);
   /* subtle white border */
   padding: 0.75rem 1rem;
 }
 
 .html th {
-  background-color: rgba(107, 97, 97, 0.1);
+  background-color: rgba(117, 103, 103, 0.1);
   /* subtle white highlight */
   font-weight: bold;
 }
 
 .html tr:nth-child(even) {
-  background-color: rgba(32, 30, 30, 0.05);
+  background-color: rgba(58, 53, 53, 0.05);
   /* light transparent row */
 }
 
 .html tr:hover {
-  background-color: rgba(63, 55, 55, 0.15);
+  background-color: rgba(95, 83, 83, 0.15);
   /* highlight on hover */
 }
 
@@ -89,7 +90,7 @@
   caption-side: bottom;
   text-align: right;
   font-size: 0.9rem;
-  color: #222020;
+  color: #111010;
   /* subtle light color for caption */
 }
 

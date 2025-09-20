@@ -50,6 +50,12 @@ p {
   height: 2rem;
 }
 
+.navbar__brand > strong {
+
+  color: #2c69b9;
+  
+}
+
 .navbar__logo {
   height: 100%;
   margin-right: 1.2rem;
