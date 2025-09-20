@@ -27,7 +27,7 @@ export default function Navbar() {
                 {/* <img class="navbar__logo" src="/avatar.png" alt="FullStack Web Developer, Nepal" /> */}
 
                 <Link to="/">
-                    <strong style={{ fontSize: '0.9em', maxWidth: '100%' }}>{ title }</strong>
+                    <strong style={{ fontSize: '1em', maxWidth: '100%' }}>{ title }</strong>
                 </Link>
 
             </div>
