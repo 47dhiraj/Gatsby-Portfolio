@@ -107,8 +107,8 @@ export default function About() {
                                 >
 
                                     <div>
-                                        <b><span style={{ fontSize: '3em' }}>. </span> {exp.duration}</b>
-                                        - Worked as {exp.role} In <b>{exp.company}</b>. <br />
+                                        <b> <span style={{ fontSize: '4em' }}> 👉 </span> {exp.duration} </b>
+                                        <br /> - Worked as {exp.role} In <b>{exp.company}</b>. <br /><br />
                                     </div>
                                 </Zoom>
 
