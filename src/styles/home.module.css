@@ -19,7 +19,7 @@
 }
 
 .header h4 {
-    color: #3283ee;
+    color: #2c69b9;
 }
 
 .leftColumn {
@@ -52,13 +52,13 @@
 
 /* Hover effect */
 .btn:hover {
-    background: #185bc0;
+    background: #2c69b9;
 }
 
 /* Typing animation effect */
 .typingFixed {
     display: inline-block;
-    color: #1d6cad;
+    color: #2c69b9;
     white-space: nowrap;
     overflow: hidden;
     /* font-weight: normal; */

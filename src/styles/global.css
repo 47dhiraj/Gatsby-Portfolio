@@ -6,7 +6,7 @@
   padding: 0;
   text-decoration: none;
   font-family: "Montserrat";
-  color: #000;
+  color: #1a1818;
 }
 
 html, body {
@@ -67,6 +67,7 @@ nav .links {
 
 
 nav a {
+  color: #2c69b9;
   display: inline-block;
   font-weight: bold;
   padding-bottom: 2px;
