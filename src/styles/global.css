@@ -6,7 +6,6 @@
   padding: 0;
   text-decoration: none;
   font-family: "Montserrat";
-  color: #1a1818;
 }
 
 html, body {
@@ -34,6 +33,7 @@ p {
 }
 
 .header {
+  color: #1a1818;
   padding: 18px 1px;
   display: flex;
   align-items: center;          
