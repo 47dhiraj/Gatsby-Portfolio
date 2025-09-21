@@ -44,7 +44,7 @@ p {
 }
 
 .navbar__brand {
-  color: #2c69b9;
+  color: #0657c0;
   display: flex;
   align-items: flex-start;
   height: 2rem;
@@ -52,7 +52,7 @@ p {
 
 .navbar__brand > strong {
 
-  color: #2c69b9;
+  color: #0657c0;
   
 }
 
@@ -74,7 +74,7 @@ nav .links {
 
 
 nav a {
-  color: #2c69b9;
+  color: #0657c0;
   display: inline-block;
   font-weight: bold;
   padding-bottom: 2px;
