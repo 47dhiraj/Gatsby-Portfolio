@@ -34,8 +34,8 @@ export default function Layout({ children })
 
 
       <footer>
-        <p style={{color: '#fff', margin: '8px auto '}}> &copy; 2025 - { title } - All rights reserved.
-          <span style={{paddingLeft: '15px', color: '#fff'}}> { email } </span>
+        <p style={{color: '#fff', margin: '5px auto '}}> &copy; 2025 - { title } - All rights reserved.
+          <span style={{paddingLeft: '25px', color: '#fff'}}> { email } </span>
         </p>
       </footer>
 

@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background: #f8f5f5;
+  background: #fdfcfc;
   background-repeat: no-repeat;
 }
 
@@ -95,21 +95,21 @@ footer {
   justify-content: center;   /* center horizontally */
   align-items: center;       /* center vertically */
   text-align: center;
-  margin: 180px auto 0 auto;  /* center footer block */
-  font-size: 22px;
-  font-weight: 500;
+  margin: 185px auto 0 auto;  /* center footer block */
+  font-size: 19px;
+  font-weight: 400;
   background: radial-gradient(at top left, rgb(223, 28, 141) 0%, rgb(19, 106, 206) 100%);
   background-repeat: no-repeat;
   min-height: 0px;          /* footer always has height */
   max-width: 1200px;         /* cap width for laptops/desktops */
   width: 100%;               /* responsive within cap */
-  border-radius: 5px;        /* optional: soft edges */
+  border-radius: 3px;        /* optional: soft edges */
   padding: 5px;
 }
 
 footer > p {
-  font-size: 22px;
-  line-height: 1em;
+  font-size: 19px;
+  line-height: 0.8em;
 }
 
 .featured :global(img) {
@@ -160,7 +160,7 @@ footer > p {
 
 
   footer {
-    font-size: 8px;         /* smaller text for mobile */
+    font-size: 4px;         /* smaller text for mobile */
     min-height: 0px;       /* shorter footer */
     padding: 5px;
     margin-top: 60px;       /* reduce gap above footer */

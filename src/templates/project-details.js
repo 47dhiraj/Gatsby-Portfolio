@@ -22,7 +22,7 @@ const ProjectDetails = ({ data }) => {
         <h2 style={{ display: 'flex', flexDirection: 'row' }}>{title}
           <span style={{ marginLeft: 'auto' }}>
             <Link href={githublink} target='_blank'>
-              <IconButton>
+              <IconButton style={{ color: '#24292F'}}>
                 <GitHub />
               </IconButton>
             </Link>
