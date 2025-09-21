@@ -33,7 +33,7 @@ p {
 }
 
 .header {
-  color: #1a1818;
+  color: #312c2c;
   padding: 18px 1px;
   display: flex;
   align-items: center;          
@@ -84,7 +84,7 @@ nav a {
 }
 
 nav .links a:hover {
-  border-color: #fc2968;
+  border-color: #4d4e4e;
 }
 
 
