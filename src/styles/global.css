@@ -95,7 +95,7 @@ footer {
   justify-content: center;   /* center horizontally */
   align-items: center;       /* center vertically */
   text-align: center;
-  margin: 185px auto 0 auto;  /* center footer block */
+  margin: 185px auto 30px auto;  /* center footer block */
   font-size: 19px;
   font-weight: 400;
   background: radial-gradient(at top left, rgb(223, 28, 141) 0%, rgb(19, 106, 206) 100%);
@@ -164,6 +164,7 @@ footer > p {
     min-height: 0px;       /* shorter footer */
     padding: 5px;
     margin-top: 60px;       /* reduce gap above footer */
+    margin-bottom: 15px;
     max-width: 100%;        /* full width on mobile */
   }
 
