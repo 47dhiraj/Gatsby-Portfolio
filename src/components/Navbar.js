@@ -40,8 +40,7 @@ export default function Navbar() {
             <div className="links">
 
                 <Link to="/">
-                    <HomeIcon className="nav-icon" />
-                    <span>Home</span>
+                    <HomeIcon className="nav-icon" /> Home
                 </Link>
 
                 <Link to="/about"> About Me </Link>
