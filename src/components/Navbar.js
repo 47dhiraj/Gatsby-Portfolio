@@ -1,14 +1,14 @@
 import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-import HomeIcon from "@material-ui/icons/Home";
+import HomeIcon from "@material-ui/icons/Home"
+import { useLocation } from '@reach/router'
 
 
 
 export default function Navbar() {
 
-
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
@@ -19,86 +19,181 @@ export default function Navbar() {
   `)
 
 
-    const { title } = data.site.siteMetadata
+  const { title } = data.site.siteMetadata
+
+  const location = useLocation()
+
+  const currentPath = location.pathname
 
 
-    return (
-
-        <nav className='header'>
-
-
-            <div className="navbar__brand">
-                <StaticImage
-                    src="../images/avatar.png"
-                    alt="A dinosaur"
-                    placeholder="blurred"
-                    layout="constrained"
-                    width={35}
-                />
-
-                <Link className="nav-title-link" to="/">
-                    <strong style={{ fontSize: '1.1em', maxWidth: '100%' }}>{title}</strong>
-                </Link>
-            </div>
+  const links = [
+    { to: '/', label: 'Home', icon: <HomeIcon className="nav-icon" /> },
+    { to: '/about', label: 'About Me' },
+    { to: '/skills', label: 'Skills' },
+    { to: '/projects', label: 'Projects' },
+    { to: '/blogs', label: 'Blogs' },
+  ]
 
 
-            <div className="links">
+  return (
 
-                <Link
-                    to="/"
-                    getProps={({ isCurrent }) =>
-                        isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
-                    }
-                >
-                    <HomeIcon className="nav-icon" />
-                    <span className="nav-text">Home</span>
-                </Link>
+    <nav className="header">
 
+      <div className="navbar__brand">
 
-                <Link
-                    to="/about"
-                    getProps={({ isCurrent }) =>
-                        isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
-                    }
-                >
-                    About Me
-                </Link>
+        <StaticImage
+          src="../images/avatar.png"
+          alt="A dinosaur"
+          placeholder="blurred"
+          layout="constrained"
+          width={35}
+        />
+
+        <Link className="nav-title-link" to="/">
+          <strong style={{ fontSize: '1.1em', maxWidth: '100%' }}>{title}</strong>
+        </Link>
+
+      </div>
 
 
-                <Link
-                    to="/skills"
-                    getProps={({ isCurrent }) =>
-                        isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
-                    }
-                >
-                    Skills
-                </Link>
+      <div className="links">
+
+        {links.map(link => (
+
+          <Link
+            key={link.to}
+            to={link.to}
+            className={currentPath === link.to ? 'active-link' : ''}
+            onClick={currentPath === link.to ? e => e.preventDefault() : undefined}
+          >
+            {link.icon && link.icon}
+            <span>{link.label}</span>
+          </Link>
+
+        ))}
+
+      </div>
 
 
-                <Link
-                    to="/projects"
-                    getProps={({ isCurrent }) =>
-                        isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
-                    }
-                >
-                    Projects
-                </Link>
+    </nav>
 
-
-                <Link
-                    to="/blogs"
-                    getProps={({ isCurrent }) =>
-                        isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
-                    }
-                >
-                    Blogs
-                </Link>
-
-                
-            </div>
-
-        </nav>
-
-    )
+  )
 
 }
+
+
+
+
+
+
+
+
+
+
+
+// // ALERNATIVE CODE
+
+// import React from 'react'
+// import { graphql, Link, useStaticQuery } from 'gatsby'
+// import { StaticImage } from "gatsby-plugin-image"
+// import HomeIcon from "@material-ui/icons/Home";
+
+
+
+// export default function Navbar() {
+
+
+//     const data = useStaticQuery(graphql`
+//     {
+//       site {
+//         siteMetadata {
+//           title
+//         }
+//       }
+//     }
+//   `)
+
+
+//     const { title } = data.site.siteMetadata
+
+
+//     return (
+
+//         <nav className='header'>
+
+
+//             <div className="navbar__brand">
+//                 <StaticImage
+//                     src="../images/avatar.png"
+//                     alt="A dinosaur"
+//                     placeholder="blurred"
+//                     layout="constrained"
+//                     width={35}
+//                 />
+
+//                 <Link className="nav-title-link" to="/">
+//                     <strong style={{ fontSize: '1.1em', maxWidth: '100%' }}>{title}</strong>
+//                 </Link>
+//             </div>
+
+
+//             <div className="links">
+
+//                 <Link
+//                     to="/"
+//                     getProps={({ isCurrent }) =>
+//                         isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
+//                     }
+//                 >
+//                     <HomeIcon className="nav-icon" />
+//                     <span className="nav-text">Home</span>
+//                 </Link>
+
+
+//                 <Link
+//                     to="/about"
+//                     getProps={({ isCurrent }) =>
+//                         isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
+//                     }
+//                 >
+//                     About Me
+//                 </Link>
+
+
+//                 <Link
+//                     to="/skills"
+//                     getProps={({ isCurrent }) =>
+//                         isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
+//                     }
+//                 >
+//                     Skills
+//                 </Link>
+
+
+//                 <Link
+//                     to="/projects"
+//                     getProps={({ isCurrent }) =>
+//                         isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
+//                     }
+//                 >
+//                     Projects
+//                 </Link>
+
+
+//                 <Link
+//                     to="/blogs"
+//                     getProps={({ isCurrent }) =>
+//                         isCurrent ? { className: "active-link", onClick: e => e.preventDefault() } : {}
+//                     }
+//                 >
+//                     Blogs
+//                 </Link>
+
+                
+//             </div>
+
+//         </nav>
+
+//     )
+
+// }
