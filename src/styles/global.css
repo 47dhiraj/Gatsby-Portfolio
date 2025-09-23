@@ -68,10 +68,15 @@ nav .links {
   margin-left: auto;
   text-align: right;
   font-size: 1.3em;
-  color: #1f1d1d;
+  color: inherit;
 }
 
 
+.nav-icon {
+  font-size: 18px;
+  margin-right: 4px;
+  color: #0657c0;
+}
 
 nav a {
   color: #0657c0;

@@ -2,6 +2,9 @@ import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 
+import HomeIcon from "@material-ui/icons/Home";
+
+
 export default function Navbar() {
 
     const data = useStaticQuery(graphql`                   
@@ -36,7 +39,11 @@ export default function Navbar() {
 
             <div className="links">
 
-                <Link to="/"> Home </Link>
+                <Link to="/">
+                    <HomeIcon className="nav-icon" />
+                    <span>Home</span>
+                </Link>
+
                 <Link to="/about"> About Me </Link>
                 <Link to="/skills"> Skills </Link>
                 <Link to="/projects"> Projects </Link>
