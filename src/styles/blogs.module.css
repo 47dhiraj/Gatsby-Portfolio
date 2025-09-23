@@ -57,8 +57,8 @@
 
 /* Card hover effect */
 .blogs div:hover {
-    transform: translateY(-2px); /* slight lift */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    transform: translateY(-3px); /* slight lift */
+    box-shadow: 5px 15px 30px rgba(0.1, 0.1, 0.1, 0.3);
 }
 
 
