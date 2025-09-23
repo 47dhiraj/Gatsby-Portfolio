@@ -77,23 +77,26 @@ nav .links {
   font-size: 20px;
   margin-right: 2px;
   color: #0657c0;
+  transition: transform 0.3s ease;    /* For smooth zoom */
 }
 
 nav a {
   color: #0657c0;
   /* display: inline-block; */
-  display: flex;                /* makes icon + text sit in a row */
-  align-items: center;          /* vertically centers both */
+  display: flex;                      /* makes icon + text sit in a row */
+  align-items: center;                /* vertically centers both */
   font-weight: bold;
   padding-bottom: 2px;
   margin-left: 18px;
   margin-top: 1.4vh;
   border-bottom: 4px solid transparent;
-  text-decoration: none;        /* optional: removes underline */
+  text-decoration: none;              /* optional: removes underline */
+  transition: transform 0.3s ease;    /* smooth zoom for the whole link */
 }
 
 nav .links a:hover {
   border-color: #4d4e4e;
+  transform: scale(1.08);             /* slight zoom effect */
 }
 
 
