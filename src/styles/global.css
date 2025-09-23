@@ -80,6 +80,23 @@ nav .links {
   transition: transform 0.25s ease;    /* For smooth zoom */
 }
 
+
+.nav-title-link {
+  color: #0657c0;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-block;            /* required so transform applies properly */
+}
+
+
+.nav-title-link:hover {
+  transform: scale(1.2);            /* zoom in animation */
+}
+
+
+
+
 nav a {
   color: #0657c0;
   /* display: inline-block; */

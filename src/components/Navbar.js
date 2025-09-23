@@ -29,8 +29,8 @@ export default function Navbar() {
                 <StaticImage src="../images/avatar.png" alt="A dinosaur" placeholder="blurred" layout="constrained" width={35} />
                 {/* <img class="navbar__logo" src="/avatar.png" alt="FullStack Web Developer, Nepal" /> */}
 
-                <Link to="/">
-                    <strong style={{ fontSize: '1em', maxWidth: '100%' }}>{ title }</strong>
+                <Link className="nav-title-link" to="/">
+                    <strong style={{ fontSize: '1.1em', maxWidth: '100%' }}>{ title }</strong>
                 </Link>
 
             </div>
