@@ -3,6 +3,8 @@ import Layout from '../components/Layout'
 import * as styles from '../styles/about.module.css'
 import Zoom from "@material-ui/core/Zoom"
 
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
 
 export default function About() {
 
@@ -118,7 +120,7 @@ export default function About() {
                                 >
 
                                     <div>
-                                        <b> <span style={{ fontSize: '1.9em' }}> 👉 </span> {exp.duration} </b>
+                                        <b> <ArrowForwardIcon style={{ verticalAlign: 'middle', color: '#0657c0', fontSize: '1.5em' }} /> {exp.duration} </b>
                                         <br /><br /> - Worked as {exp.role} In <b>{exp.company}</b>.<br />
                                     </div>
                                 </Zoom>
