@@ -68,7 +68,8 @@
     width: 20ch;                /* reserve width equal to longest text */
     box-sizing: content-box;    /* ensures width is fixed to content */
     min-width: 20ch;            /* width for longest role */
-    height: 1.2em;              /*  exact computed height of h4 */
+    
+    height: 2em;              
 }
 
 /* Vertical social icons on left side of image */
