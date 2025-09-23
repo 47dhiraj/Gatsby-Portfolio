@@ -74,8 +74,8 @@ nav .links {
 
 
 .active-link {
-  border-bottom: 2px solid #0657c0;     /* highlight current page */
-  padding-bottom: 9px;
+  border-bottom: 3px solid #0657c0;     /* highlight current page */
+  padding-bottom: 10px;
   pointer-events: none;                   /* disable clicking */
   cursor: default;                        /* no hand cursor */
   transform: none !important;             /* disable hover zoom */
