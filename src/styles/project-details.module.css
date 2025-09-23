@@ -34,14 +34,17 @@ p {
 .backButton {
   text-decoration: none;
   color: #1c1d1f;
-  font-weight: 500;
-  background-color: #f7f7f7;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #1c1d1f;
   transition: all 0.2s ease-in-out;
 }
 
 .backButton:hover {
-  background-color: #e0e0e0;
+  color: #0657c0;
+  border: 2px solid #0657c0;
+  background-color: #ffffff;
   transform: translateX(-2px);
 }

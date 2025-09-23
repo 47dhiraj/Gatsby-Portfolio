@@ -19,10 +19,8 @@ const ProjectDetails = ({ data }) => {
 
       <div className={styles.details}>
 
-        <div style={{ marginBottom: "2rem" }}>
-          <Link to="/projects/" className={styles.backButton}>
-            ← BACK TO PROJECTS
-          </Link>
+        <div style={{ marginBottom: "0.5rem" }}>
+          <Link to="/projects/" className={styles.backButton}>← BACK TO PROJECTS</Link>
         </div>
 
 
