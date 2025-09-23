@@ -54,6 +54,7 @@ export default function Navbar() {
                     <span className="nav-text">Home</span>
                 </Link>
 
+
                 <Link
                     to="/about"
                     getProps={({ isCurrent }) =>
@@ -62,6 +63,7 @@ export default function Navbar() {
                 >
                     About Me
                 </Link>
+
 
                 <Link
                     to="/skills"
@@ -72,6 +74,7 @@ export default function Navbar() {
                     Skills
                 </Link>
 
+
                 <Link
                     to="/projects"
                     getProps={({ isCurrent }) =>
@@ -81,6 +84,7 @@ export default function Navbar() {
                     Projects
                 </Link>
 
+
                 <Link
                     to="/blogs"
                     getProps={({ isCurrent }) =>
@@ -89,6 +93,7 @@ export default function Navbar() {
                 >
                     Blogs
                 </Link>
+
                 
             </div>
 
