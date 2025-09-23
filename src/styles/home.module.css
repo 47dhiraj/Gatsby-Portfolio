@@ -62,8 +62,8 @@
     color: #353333;
     white-space: nowrap;
     overflow: hidden;
+    font-size: xx-large;
     /* font-weight: normal; */
-    /* font-weight: bold; */
     font-weight: 600;
     width: 20ch;                /* reserve width equal to longest text */
     box-sizing: content-box;    /* ensures width is fixed to content */
