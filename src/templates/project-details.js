@@ -19,10 +19,9 @@ const ProjectDetails = ({ data }) => {
 
       <div className={styles.details}>
 
-        <div style={{ marginBottom: "0.5rem" }}>
+        <div>
           <Link to="/projects/" className={styles.backButton}>← BACK TO PROJECTS</Link>
         </div>
-
 
         <h2 style={{ display: 'flex', flexDirection: 'row' }}>{title}
           <span style={{ marginLeft: 'auto' }}>
