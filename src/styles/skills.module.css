@@ -3,15 +3,15 @@
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;              */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
-    grid-gap: 26px;
+    grid-gap: 22px;
 }
 
 .item {
-    width: 5.9rem;
-    height: 5.8rem;
+    width: 5.5rem;
+    height: 5.4rem;
     /* transition: width 0.3s, height 0.4s; */
 
-    transition: transform .27s;
+    transition: transform .29s;
     margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@ h4 {
     
     .item {
         width: 2rem;
-        height: 3rem;
+        height: 2rem;
     }
 
     .item:hover {
