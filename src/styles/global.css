@@ -44,14 +44,14 @@ p {
   display: flex;
   align-items: center;          
   max-width: 1200px;
-  margin: 5px auto;               
-  border-bottom: 4px solid;
+  margin: 0px auto;               
+  border-bottom: 3.5px solid;
   border-color: #4d4b4b;
 }
 
 .header.scrolled {
-  background-color: rgba(255,255,255,0.9);      /* semi-transparent */
-  backdrop-filter: blur(5px);                     /* blur content behind */
+  background-color: rgba(255,255,255,0.6);      /* semi-transparent */
+  backdrop-filter: blur(3.5px);                     /* blur content behind */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);        /* optional shadow */
 }
 
