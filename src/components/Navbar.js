@@ -7,6 +7,23 @@ import { useLocation } from '@reach/router'
 
 export default function Navbar() {
 
+
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 30)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+
+  }, [])
+
+
+
   const data = useStaticQuery(graphql`
     {
       site {
@@ -34,7 +51,7 @@ export default function Navbar() {
 
   return (
 
-    <nav className="header">
+    <nav className={`header ${scrolled ? 'scrolled' : ''}`}>
 
       <div className="navbar__brand">
         <StaticImage
