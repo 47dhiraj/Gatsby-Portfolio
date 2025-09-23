@@ -25,15 +25,15 @@
   color: #1c1d1f;
   font-weight: bold;
   background-color: #ffffff;
-  padding: 0.6rem 0.3rem;
+  padding: 0.5rem 0.3rem;
   border-radius: 5px;
-  border: 2px solid #1c1d1f;
+  border: 3px solid #1c1d1f;
   transition: all 0.2s ease-in-out;
 }
 
 .backButton:hover {
   color: #0657c0;
-  border: 2px solid #0657c0;
+  border: 3px solid #0657c0;
   background-color: #ffffff;
   transform: translateX(2px);
 }
