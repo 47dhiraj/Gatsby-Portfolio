@@ -20,7 +20,7 @@ const ProjectDetails = ({ data }) => {
       <div className={styles.details}>
 
         <div>
-          <Link to="/projects/" className={styles.backButton}>← BACK TO PROJECTS</Link>
+          <Link to="/projects/" className={styles.backButton}>🡸 BACK TO PROJECTS</Link>
         </div>
 
         <h2 style={{ display: 'flex', flexDirection: 'row' }}>{title}
