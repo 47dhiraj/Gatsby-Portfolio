@@ -74,8 +74,8 @@ nav .links {
 
 
 .active-link {
-  border-bottom: 3px solid #0657c0;     /* highlight current page */
-  padding-bottom: 10px;
+  border-bottom: 3.5px solid #0657c0;     /* highlight current page */
+  padding-bottom: 9px;
   pointer-events: none;                   /* disable clicking */
   cursor: default;                        /* no hand cursor */
   transform: none !important;             /* disable hover zoom */
@@ -115,7 +115,7 @@ nav a {
   padding-bottom: 2px;
   margin-left: 18px;
   margin-top: 1.4vh;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3.5px solid transparent;
   text-decoration: none;              /* optional: removes underline */
   transition: transform 0.25s ease;    /* smooth zoom for the whole link */
 }
