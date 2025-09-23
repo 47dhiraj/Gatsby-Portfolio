@@ -77,7 +77,7 @@ nav .links {
   font-size: 20px;
   margin-right: 2px;
   color: #0657c0;
-  transition: transform 0.2s ease;    /* For smooth zoom */
+  transition: transform 0.3s ease;    /* For smooth zoom */
 }
 
 nav a {
@@ -91,12 +91,12 @@ nav a {
   margin-top: 1.4vh;
   border-bottom: 4px solid transparent;
   text-decoration: none;              /* optional: removes underline */
-  transition: transform 0.2s ease;    /* smooth zoom for the whole link */
+  transition: transform 0.3s ease;    /* smooth zoom for the whole link */
 }
 
 nav .links a:hover {
   border-color: #4d4e4e;
-  transform: scale(1.14);             /* slight zoom effect */
+  transform: scale(1.17);             /* slight zoom effect */
 }
 
 
@@ -123,6 +123,23 @@ footer > p {
   font-size: 19px;
   line-height: 0.8em;
 }
+
+
+.footer-email {
+  color: #fff;
+  text-decoration: none;        /* no underline by default */
+  cursor: pointer;              /* hand cursor */
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #ff2781;             /* gold highlight on hover (or pick your brand color) */
+  text-decoration: underline;   /* optional underline on hover */
+}
+
+
+
+
 
 .featured :global(img) {
   max-width: 100%;

@@ -41,6 +41,35 @@ export default function Layout({ children })
 
 
 
+      <footer>
+
+          <p style={{ color: '#fff', margin: '5px auto' }}>
+
+            &copy; 2025 - {title} - All rights reserved.
+
+            <span style={{ paddingLeft: '25px' }}>
+
+              <a
+                href={`mailto:${email}`}
+                className="footer-email"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+                  window.open(gmailUrl, "_blank"); // try Gmail
+                  // fallback: if Gmail doesn't load, mailto will still exist
+                  setTimeout(() => { window.location.href = `mailto:${email}`; }, 2000);
+                }}
+              >
+                {email}
+              </a>
+
+            </span>
+
+          </p>
+      </footer>
+
+
+
     </div>
   )
 }
