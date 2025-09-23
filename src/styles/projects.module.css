@@ -6,11 +6,14 @@
     color: #0657c0;
     font-size: 2.2em;
     margin-top: 20px;
+    
+}
+
+.zoomText {
     transition: transform 0.3s ease;
 }
 
-
-.portfolio_projects > h2:hover {
+.zoomText:hover {
     transform: scale(1.25);
 }
 

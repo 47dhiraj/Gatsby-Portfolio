@@ -51,7 +51,7 @@ export default function About() {
                 <div style={{ borderRight: '4.5px solid #422d2dff' }}>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '240ms' : '0ms' }} >
-                        <h2> Intro </h2>
+                        <h2 className={styles.zoomText}> Intro </h2>
                     </Zoom>
 
 
@@ -70,7 +70,7 @@ export default function About() {
                 <div style={{ borderRight: '4.5px solid #422d2dff' }}>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '400ms' : '0ms' }} >
-                        <h2> Background </h2>
+                        <h2 className={styles.zoomText}> Background </h2>
                     </Zoom>
 
 
@@ -87,7 +87,7 @@ export default function About() {
                 <div>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '560ms' : '0ms' }} >
-                        <h2> Work Experience </h2>
+                        <h2 className={styles.zoomText}> Work Experience </h2>
                     </Zoom>
 
 

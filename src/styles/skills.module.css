@@ -28,10 +28,13 @@
 h4 {
     color: #225ead;
     font-size: 2.2em;
+}
+
+.zoomText {
     transition: transform 0.3s ease;
 }
 
-h4:hover {
+.zoomText:hover {
     transform: scale(1.25);
 }
 
