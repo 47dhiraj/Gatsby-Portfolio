@@ -41,14 +41,14 @@ export default function Layout({ children })
 
             <span style={{ paddingLeft: '25px' }}>
 
-              <a
-                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="footer-email"
-              >
-                {email}
-              </a>
+            <a
+              rel="noopener noreferrer"
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
+              target="_blank"
+              className="footer-email"
+            >
+              Email Id: {email}
+            </a>
 
             </span>
 
