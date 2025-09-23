@@ -27,3 +27,21 @@ p {
   margin: 16px auto;
   line-height: 1.5em;
 }
+
+
+
+
+.backButton {
+  text-decoration: none;
+  color: #1c1d1f;
+  font-weight: 500;
+  background-color: #f7f7f7;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.backButton:hover {
+  background-color: #e0e0e0;
+  transform: translateX(-2px);
+}
