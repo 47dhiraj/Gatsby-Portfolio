@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import HomeIcon from "@material-ui/icons/Home"
