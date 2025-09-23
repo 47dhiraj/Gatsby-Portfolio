@@ -44,14 +44,15 @@ export default function About() {
 
             <div className={styles.about}>
 
-
-
-                
-
                 <div style={{ borderRight: '4.5px solid #422d2dff' }}>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '240ms' : '0ms' }} >
-                        <h2 className={styles.zoomText}> Intro </h2>
+
+                        <div className={styles.hoverWrapper}>
+                            <h2><strong>Intro</strong></h2>
+                        </div>
+
+                        {/* <h2> Intro </h2> */}
                     </Zoom>
 
 
@@ -70,7 +71,12 @@ export default function About() {
                 <div style={{ borderRight: '4.5px solid #422d2dff' }}>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '400ms' : '0ms' }} >
-                        <h2 className={styles.zoomText}> Background </h2>
+
+                        <div className={styles.hoverWrapper}>
+                            <h2><strong> Background </strong></h2>
+                        </div>
+
+                        {/* <h2> Background </h2> */}
                     </Zoom>
 
 
@@ -87,7 +93,12 @@ export default function About() {
                 <div>
 
                     <Zoom in={show} style={{ transitionDelay: show ? '560ms' : '0ms' }} >
-                        <h2 className={styles.zoomText}> Work Experience </h2>
+
+                        <div className={styles.hoverWrapper}>
+                            <h2><strong> Work Experience </strong></h2>
+                        </div>
+
+                        {/* <h2> Work Experience </h2> */}
                     </Zoom>
 
 

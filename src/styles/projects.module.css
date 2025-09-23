@@ -3,28 +3,26 @@
 }
 
 
-
-
 .portfolio_projects > div > h2 {
 
     color: #0657c0;
     font-size: 2.2em;
     margin-top: 20px;
 
-    transition: transform 0.3s ease;   
+    transition: transform 0.5s ease;   
 
 }
 
 .hoverWrapper:hover h2 {
-
-    transform: scale(1.25);
-
+    transform: scale(1.2);
 }
 
 
 .portfolio_projects > div > h2 > strong {
     color: #0657c0;
 }
+
+
 
 
 

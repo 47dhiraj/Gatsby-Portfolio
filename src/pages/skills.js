@@ -49,7 +49,14 @@ export default function Skills() {          // component ko name sadhai capital 
         <Layout>
 
             <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }} >
-                <h4 style={{ textAlign: 'center' }} className={styles.zoomText}> Skills Developed </h4>
+
+                <div className={styles.hoverWrapper}>
+
+                    <h4 style={{ textAlign: 'center' }}> Skills Developed </h4>
+                
+                </div>
+
+                {/* <h4 style={{ textAlign: 'center' }}> Skills Developed </h4> */}
             </Zoom>
 
             <div className={styles.container}>

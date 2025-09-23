@@ -2,23 +2,21 @@
     text-align: center;
 }
 
-.portfolio_blogs > h2 {
+.portfolio_blogs > div > h2 {
     color: #0657c0;
     font-size: 2.2em;
     margin-top: 20px;
+
+    transition: transform 0.5s ease; 
 }
 
 
-.zoomText {
-    transition: transform 0.3s ease;
-}
-
-.zoomText:hover {
-    transform: scale(1.25);
+.hoverWrapper:hover h2 {
+    transform: scale(1.2);
 }
 
 
-.portfolio_blogs > h2 > strong {
+.portfolio_blogs > div > h2 > strong {
     color: #0657c0;
 }
 

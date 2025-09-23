@@ -25,17 +25,16 @@
 }
 
 
-h4 {
+.hoverWrapper h4 {
     color: #225ead;
     font-size: 2.2em;
+
+    transition: transform 0.5s ease;   
 }
 
-.zoomText {
-    transition: transform 0.3s ease;
-}
 
-.zoomText:hover {
-    transform: scale(1.25);
+.hoverWrapper:hover h4 {
+    transform: scale(1.2);
 }
 
 
