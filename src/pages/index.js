@@ -64,7 +64,7 @@ export default function Home() {
           <h2> Code, The Logic ! </h2>
           <h3> 'Transform Data into AI Insights' </h3>
 
-          <div style={{ height: '2em' }}>
+          <div>
             <h4 className={styles.typingFixed}>A {displayed}</h4>
           </div>
 
