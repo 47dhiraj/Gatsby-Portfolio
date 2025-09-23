@@ -74,19 +74,22 @@ nav .links {
 
 
 .nav-icon {
-  font-size: 18px;
-  margin-right: 4px;
+  font-size: 20px;
+  margin-right: 2px;
   color: #0657c0;
 }
 
 nav a {
   color: #0657c0;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;                /* makes icon + text sit in a row */
+  align-items: center;          /* vertically centers both */
   font-weight: bold;
   padding-bottom: 2px;
   margin-left: 18px;
   margin-top: 1.4vh;
   border-bottom: 4px solid transparent;
+  text-decoration: none;        /* optional: removes underline */
 }
 
 nav .links a:hover {

@@ -39,8 +39,12 @@ export default function Navbar() {
 
             <div className="links">
 
-                <Link to="/">
-                    <HomeIcon className="nav-icon" /> Home
+                <Link to="/" className="nav-link">
+
+                    <HomeIcon className="nav-icon" />
+
+                    <span className="nav-text"> Home </span>
+
                 </Link>
 
                 <Link to="/about"> About Me </Link>
