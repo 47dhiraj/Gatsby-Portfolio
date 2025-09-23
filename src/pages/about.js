@@ -120,7 +120,7 @@ export default function About() {
                                 >
 
                                     <div>
-                                        <b> <ArrowForwardIcon style={{ verticalAlign: 'middle', color: '#0657c0', fontSize: '1.7em' }} /> {exp.duration} </b>
+                                        <b> <ArrowForwardIcon style={{ verticalAlign: 'middle', color: '#0657c0', fontSize: '1.9em' }} /> {exp.duration} </b>
                                         <br /><br /> - Worked as {exp.role} In <b>{exp.company}</b>.<br />
                                     </div>
                                 </Zoom>
