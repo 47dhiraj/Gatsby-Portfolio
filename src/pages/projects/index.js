@@ -23,7 +23,14 @@ const Projects = ({ data }) => {
       <div className={styles.portfolio_projects}>
 
         <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }} >
-          <h2 className={styles.zoomText}><strong>Projects created</strong></h2>
+
+          <div className={styles.hoverWrapper}>
+
+            <h2><strong>Projects created</strong></h2>
+            
+          </div>
+
+          {/* <h2><strong>Projects created</strong></h2> */}
         </Zoom>
 
         <div className={styles.projects}>

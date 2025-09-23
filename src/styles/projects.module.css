@@ -2,25 +2,32 @@
     text-align: center;
 }
 
-.portfolio_projects > h2 {
+
+
+
+.portfolio_projects > div > h2 {
+
     color: #0657c0;
     font-size: 2.2em;
     margin-top: 20px;
-    
+
+    transition: transform 0.3s ease;   
+
 }
 
-.zoomText {
-    transition: transform 0.3s ease;
-}
+.hoverWrapper:hover h2 {
 
-.zoomText:hover {
     transform: scale(1.25);
+
 }
 
 
-.portfolio_projects > h2 > strong {
+.portfolio_projects > div > h2 > strong {
     color: #0657c0;
 }
+
+
+
 
 .portfolio_projects > h4 {
     font-size: 1.5em;
