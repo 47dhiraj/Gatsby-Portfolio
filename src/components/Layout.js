@@ -33,11 +33,11 @@ export default function Layout({ children })
       </div>
 
 
-      <footer>
+      {/* <footer>
         <p style={{color: '#fff', margin: '5px auto '}}> &copy; 2025 - { title } - All rights reserved.
           <span style={{paddingLeft: '25px', color: '#fff'}}> { email } </span>
         </p>
-      </footer>
+      </footer> */}
 
 
 
