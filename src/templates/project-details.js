@@ -44,6 +44,7 @@ const ProjectDetails = ({ data }) => {
               alt={`${title} - Image ${idx + 1}`}
               quality={100}
               style={{
+                display: "block",
                 borderRadius: "10px",
                 marginBottom: "3rem",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)"
@@ -53,6 +54,7 @@ const ProjectDetails = ({ data }) => {
                 height: "auto",
                 borderRadius: "10px"
               }}
+              wrapperClassName="project-details-image-wrapper"
             />
           ))}
 

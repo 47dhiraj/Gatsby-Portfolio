@@ -17,15 +17,20 @@
   margin-top: 26px;
 }
 
+
+
 .featured {
   margin-bottom: 60px;
 }
 
 
-.gatsby-image-wrapper-constrained {
-  display: inherit;
-  vertical-align: top;
+.project-details-image-wrapper {
+  display: block;
+  /* display: inherit; */
+  /* display: flex; */
 }
+
+
 
 p {
   font-size: 19px;
