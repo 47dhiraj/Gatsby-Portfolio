@@ -3,11 +3,18 @@
 }
 
 .portfolio_blogs > div > h2 {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    width: fit-content;
     color: #0657c0;
     font-size: 2.2em;
     margin-top: 20px;
+    transition: transform 0.4s ease; 
+}
 
-    transition: transform 0.5s ease; 
+.hoverWrapper {
+    text-align: center;
 }
 
 

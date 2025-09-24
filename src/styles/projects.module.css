@@ -4,13 +4,19 @@
 
 
 .portfolio_projects > div > h2 {
-
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    width: fit-content;
     color: #0657c0;
     font-size: 2.2em;
     margin-top: 20px;
+    transition: transform 0.4s ease;   
+}
 
-    transition: transform 0.5s ease;   
 
+.hoverWrapper {
+    text-align: center;
 }
 
 .hoverWrapper:hover h2 {
@@ -21,7 +27,6 @@
 .portfolio_projects > div > h2 > strong {
     color: #0657c0;
 }
-
 
 
 

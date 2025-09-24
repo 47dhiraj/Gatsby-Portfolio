@@ -10,14 +10,22 @@
 }   
 
 .about div h2 {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    width: fit-content;
     color: #225ead;
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
 }
 
+.hoverWrapper {
+    text-align: center;
+}
+
 .hoverWrapper > h2 {
-    transition: transform 0.5s ease;  
+    transition: transform 0.4s ease;  
 }
 
 .hoverWrapper:hover h2 {

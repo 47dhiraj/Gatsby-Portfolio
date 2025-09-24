@@ -23,9 +23,7 @@ const Blogs = ({ data }) => {
         <Zoom in={show} style={{ transitionDelay: show ? '300ms' : '0ms' }} >
 
           <div className={styles.hoverWrapper}>
-
             <h2><strong>Blogs posted</strong></h2>
-            
           </div>
 
           {/* <h2><strong>Blogs posted</strong></h2> */}
