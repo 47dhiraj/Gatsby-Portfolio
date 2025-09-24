@@ -165,6 +165,7 @@ footer > p {
 
 
 .footer-email {
+  display: inline-block;
   color: #fff;
   text-decoration: none;        /* no underline by default */
   transition: color 0.4s ease;
@@ -172,15 +173,14 @@ footer > p {
 }
 
 .footer-email:hover {
-  color: #fff;             /* gold highlight on hover (or pick your brand color) */
-  font-size: x-large;
+  color: #fff;                  /* gold highlight on hover (or pick your brand color) */
+  font-size: large;
   font-weight: bolder;
-  cursor: pointer;              /* hand cursor */
-  text-decoration: underline;   /* optional underline on hover */
-  transform: scale(1.07);
+  cursor: pointer;                /* hand cursor */
+  text-decoration: underline;     /* optional underline on hover */
+  transform: translateY(-3px);
+  /* transform: scale(1.03); */
 }
-
-
 
 
 
