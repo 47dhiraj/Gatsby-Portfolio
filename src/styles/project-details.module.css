@@ -25,9 +25,7 @@
 
 
 .project-details-image-wrapper {
-  display: block;
-  /* display: inherit; */
-  /* display: flex; */
+  display: block !important;
 }
 
 

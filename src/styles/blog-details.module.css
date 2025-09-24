@@ -47,9 +47,8 @@
   margin-bottom: 50px;
 }
 
-.gatsby-image-wrapper-constrained {
-  display: inherit;
-  vertical-align: top;
+.blog-details-image-wrapper {
+  display: block !important;
 }
 
 
