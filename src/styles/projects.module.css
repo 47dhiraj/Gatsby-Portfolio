@@ -59,6 +59,12 @@
 }
 
 
+.quote {
+    position: relative;
+    top: 7.5rem;
+}
+
+
 .projects div {
     position: relative;
     overflow: hidden;

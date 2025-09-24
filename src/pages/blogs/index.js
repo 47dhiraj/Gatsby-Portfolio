@@ -47,7 +47,7 @@ const Blogs = ({ data }) => {
           }
         </div>
 
-        <p>Like what you see ? Please email me at <span></span>{email} for a quote !</p>
+        <p className={styles.quote}>Like what you see ? Please email me at <span style={{ fontWeight: 'bold' }}>{email}</span> for a quote.</p>
 
       </div>
     </Layout>

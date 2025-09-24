@@ -53,6 +53,11 @@
     margin-top: 2px;
 }
 
+.quote {
+    position: relative;
+    top: 7.5rem;
+}
+
 
 .blogs div {
     position: relative;
