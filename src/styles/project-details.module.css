@@ -20,7 +20,12 @@
 .featured {
   margin-bottom: 60px;
 }
-  
+
+
+.gatsby-image-wrapper-constrained {
+  display: inherit;
+  vertical-align: top;
+}
 
 p {
   font-size: 19px;

@@ -47,6 +47,11 @@
   margin-bottom: 50px;
 }
 
+.gatsby-image-wrapper-constrained {
+  display: inherit;
+  vertical-align: top;
+}
+
 
 /* Inline code style */
 .html code {
