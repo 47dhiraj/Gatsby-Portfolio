@@ -17,10 +17,10 @@
     text-align: center;
 }
 
-
-.hoverWrapper:hover h2 {
-    transform: scale(1.1);
+.hoverWrapper h2:hover {
+  transform: scale(1.1);
 }
+
 
 
 .portfolio_blogs > div > h2 > strong {

@@ -53,8 +53,7 @@ export default function About() {
                         <div className={styles.hoverWrapper}>
                             <h2><strong>Intro</strong></h2>
                         </div>
-
-                        {/* <h2> Intro </h2> */}
+                        
                     </Zoom>
 
 

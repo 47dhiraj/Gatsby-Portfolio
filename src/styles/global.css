@@ -167,12 +167,12 @@ footer > p {
 .footer-email {
   color: #fff;
   text-decoration: none;        /* no underline by default */
-  cursor: pointer;              /* hand cursor */
   transition: color 0.3s ease;
 }
 
 .footer-email:hover {
-  color: #ff2781;             /* gold highlight on hover (or pick your brand color) */
+  color: #39ff64;             /* gold highlight on hover (or pick your brand color) */
+  cursor: pointer;              /* hand cursor */
   text-decoration: underline;   /* optional underline on hover */
 }
 

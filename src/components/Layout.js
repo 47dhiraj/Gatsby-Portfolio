@@ -40,14 +40,14 @@ export default function Layout({ children })
             &copy; 2025 - {title} - All rights reserved.
 
             <span style={{ paddingLeft: '25px' }}>
-
+            Email:{"  "}
             <a
               rel="noopener noreferrer"
               href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
               target="_blank"
               className="footer-email"
             >
-              Email Id: {email}
+              {email}
             </a>
 
             </span>

@@ -28,8 +28,8 @@
     transition: transform 0.4s ease;  
 }
 
-.hoverWrapper:hover h2 {
-    transform: scale(1.1);
+.hoverWrapper h2:hover {
+  transform: scale(1.1);
 }
 
 
