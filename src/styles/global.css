@@ -171,7 +171,9 @@ footer > p {
 }
 
 .footer-email:hover {
-  color: #26af44;             /* gold highlight on hover (or pick your brand color) */
+  color: #fff;             /* gold highlight on hover (or pick your brand color) */
+  font-size: large;
+  font-weight: bold;
   cursor: pointer;              /* hand cursor */
   text-decoration: underline;   /* optional underline on hover */
 }
