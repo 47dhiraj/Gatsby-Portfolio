@@ -29,7 +29,7 @@ p {
 }
 
 .content {
-  padding-top: 125px;
+  padding-top: 112px;
   min-height: 500px;
 }
 
@@ -168,16 +168,16 @@ footer > p {
   display: inline-block;
   color: #fff;
   text-decoration: none;        /* no underline by default */
-  transition: color 0.4s ease;
-  transition: transform 0.4s ease;
+  transition: color 0.2s ease;
+  transition: transform 0.5s ease;
 }
 
 .footer-email:hover {
   color: #fff;                  /* gold highlight on hover (or pick your brand color) */
   font-size: large;
-  font-weight: bolder;
+  font-weight: bold;
   cursor: pointer;                /* hand cursor */
-  text-decoration: underline;     /* optional underline on hover */
+  /* text-decoration: underline;      */
   transform: translateY(-3px);
   /* transform: scale(1.03); */
 }
