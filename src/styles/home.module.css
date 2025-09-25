@@ -40,10 +40,10 @@
 .btn {
     display: inline-block;
     background: #0657c0;
-    margin-top: 4rem; /* use relative units instead of px */
-    padding: 0.42rem 2rem;
+    margin-top: 5rem;           /* use relative units instead of px */
+    padding: 0.36rem 2rem;
     border-radius: 5px;
-    font-size: 1.3rem; /* scalable font size */
+    font-size: 1.35rem;         /* scalable font size */
     font-weight: bold;
     color: #fff;
     text-align: center;
