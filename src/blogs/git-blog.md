@@ -2,7 +2,7 @@
 title: 'Git & Version Control'
 slug: git
 description: 'A comprehensive guide to Git, covering version control fundamentals, branching strategies, merging workflows, and best practices for collaborative software development.'
-pubDate: 'Aug 25 2025'
+pubDate: 2025-08-15
 thumb: ../images/blogs/thumbs/git.png
 featuredImgs: 
   - ../images/blogs/featured/git.png

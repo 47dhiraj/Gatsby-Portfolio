@@ -2,7 +2,7 @@
 title: 'Database Types & GUIs'
 slug: database-types-guis
 description: 'Overview of various database like RDBMS (MySQL, PostgreSQL, MsSQL, Oracle), NoSQL (MongoDB, Cassandra), OODBMS (objectDB, db4o) & DB GUIs like DBeaver, MySQL Workbench, phpMyAdmin, pgAdmin, and MongoDB Compass.'
-pubDate: 'Aug 29 2025'
+pubDate: 2025-08-02
 thumb: ../images/blogs/thumbs/databases-and-guis.png
 featuredImgs: 
   - ../images/blogs/featured/databases-and-guis.png

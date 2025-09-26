@@ -75,7 +75,7 @@ export const query = graphql`
       frontmatter {
         title
         description
-        pubDate
+        pubDate(formatString: "MMM DD, YYYY")
         featuredImgs {
           childImageSharp {
             gatsbyImageData(width: 1182, layout: CONSTRAINED, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

@@ -2,7 +2,7 @@
 title: 'Docker & Containerization'
 slug: docker
 description: 'A beginner-friendly guide to Docker, covering containerization basics, Docker architecture, Dockerfiles, images, containers, volumes, networks, and Docker Hub.'
-pubDate: 'Aug 25 2025'
+pubDate: 2025-08-12
 thumb: ../images/blogs/thumbs/docker.png
 featuredImgs: 
   - ../images/blogs/featured/docker.png

@@ -64,7 +64,7 @@ export default Blogs
 export const query = graphql`
   query BlogsPage {
     blogs: allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
+      sort: { order: DESC, fields: frontmatter___pubDate }
       filter: { fields: { sourceInstanceName: { eq: "blogs" } } }
     ) {
       nodes {
@@ -72,6 +72,7 @@ export const query = graphql`
           title
           slug
           description
+          pubDate(formatString: "MMMM DD, YYYY")
           thumb {
             childImageSharp {
               gatsbyImageData(

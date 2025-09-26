@@ -2,7 +2,7 @@
 title: 'RESTful APIs'
 slug: restful-api
 description: 'A deep dive into Representational State Transfer APIs, covering REST architecture principles, HTTP methods, stateless design & best practices for building scalable web services.'
-pubDate: 'Aug 27 2025'
+pubDate: 2025-08-04
 thumb: ../images/blogs/thumbs/api.png
 featuredImgs: 
   - ../images/blogs/featured/api.png

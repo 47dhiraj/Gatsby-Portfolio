@@ -2,7 +2,7 @@
 title: 'Virtual Environment (venv)'
 slug: python-venv-pip-conda
 description: 'A deep dive into Python virtual environments, using pip for web applications and conda for machine learning and data science workflows.'
-pubDate: 'Aug 28 2025'
+pubDate: 2025-08-16
 thumb: ../images/blogs/thumbs/virtual-environment.png
 featuredImgs: 
   - ../images/blogs/featured/virtual-environment.png
