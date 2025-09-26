@@ -50,8 +50,8 @@ p {
 }
 
 .header.scrolled {
-  background-color: rgba(255,255,255,0.63);      /* semi-transparent */
-  backdrop-filter: blur(4.8px);                     /* blur content behind */
+  background-color: rgba(255,255,255,0.6);      /* semi-transparent */
+  backdrop-filter: blur(4.6px);                     /* blur content behind */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);        /* optional shadow */
 }
 
