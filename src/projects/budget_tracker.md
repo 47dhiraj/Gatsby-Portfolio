@@ -2,7 +2,7 @@
 title: BUDGET TRACKER
 stack: JSX, CSS, React, Firebase
 slug: budget-tracker-web-app
-date: 2022-02-10T00:00:00+00:00
+date: 2021-01-10
 thumb: ../images/projects/thumbs/budget_tracker.png
 featuredImgs: 
   - ../images/projects/featured/budget_tracker.png

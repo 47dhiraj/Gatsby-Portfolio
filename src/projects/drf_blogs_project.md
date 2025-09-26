@@ -2,7 +2,7 @@
 title: BLOGS SITE
 stack: HTML, CSS, Bootstrap, Vannila Js, Django Rest Framework
 slug: blogs-web-app
-date: 2021-02-01T00:00:00+00:00
+date: 2020-05-01
 thumb: ../images/projects/thumbs/blogs.png
 featuredImgs: 
   - ../images/projects/featured/blog_detail.png

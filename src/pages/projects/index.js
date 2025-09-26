@@ -78,6 +78,7 @@ export const query = graphql`
           title
           slug
           stack
+          date(formatString: "YYYY-MM-DD")
           thumb {
             childImageSharp {
               gatsbyImageData(

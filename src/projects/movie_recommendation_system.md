@@ -2,7 +2,7 @@
 title: NEXT GEN MOVIE RECOMMENDER
 stack: HTML, CSS, Bootstrap, Javascript, Pandas, Scikit, Django, ML Algorithms
 slug: movie-recommendation-system
-date: 2021-07-01T00:00:00+00:00
+date: 2023-07-01
 thumb: ../images/projects/thumbs/movies.png
 featuredImgs: 
   - ../images/projects/featured/movie_landing_page.jpg

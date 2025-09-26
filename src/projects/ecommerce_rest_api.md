@@ -2,7 +2,7 @@
 title: ECOMMERCE SITE
 stack: HTML, CSS, Bootstrap, React, Django Rest Framework
 slug: ecommerce-web-app
-date: 2021-05-01T00:00:00+00
+date: 2022-08-01
 thumb: ../images/projects/thumbs/ecommerce.png
 featuredImgs: 
   - ../images/projects/featured/ecommerce-banner.png
