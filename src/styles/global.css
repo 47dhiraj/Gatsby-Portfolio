@@ -40,7 +40,7 @@ p {
   background: #fffefe;
   z-index: 999;
   color: #312c2c;
-  padding: 18px 1px;
+  padding: 12px 0px;
   display: flex;
   align-items: center;          
   max-width: 1200px;
